@@ -1,4 +1,4 @@
-schema_version: 1.0
+schema_version: 1.1
 run_id: FAIL-CLOSED-CHAT-LOGGER-SELFTEST-20260903-01
 run_date: 2026-09-03
 status: SELF_TEST_PASS
@@ -6,12 +6,16 @@ implementation_role: IMPLEMENTER_PRODUCER
 independent_acceptance: NOT_CLAIMED
 implementation_path: tools/fail_closed_chat_logger.py
 test_path: tools/test_fail_closed_chat_logger.py
-runtime: local_ephemeral_python_runtime
+runtime: local_ephemeral_python_runtime_plus_github_actions_ubuntu
 backend_under_test: sqlite_wal_synchronous_full
 results:
-  total: 5
-  passed: 5
-  failed: 0
+  local_total: 5
+  local_passed: 5
+  local_failed: 0
+  github_actions_status: completed
+  github_actions_conclusion: success
+  github_actions_run_id: 33764398786
+  github_actions_head_sha: 0248717ab7a5cea44056be28c93a8e0516dd74ae
 cases:
   - id: FC01
     claim: user durable commit precedes model invocation and assistant durable commit precedes delivery
@@ -28,6 +32,12 @@ cases:
   - id: FC05
     claim: post-hoc content mutation is detected by hash-chain verification
     result: PASS
+external_execution_evidence:
+  platform: GITHUB_ACTIONS
+  runner: ubuntu-latest
+  workflow: .github/workflows/fail_closed_chat_logger_ci.yml
+  trigger: push
+  result: SUCCESS
 residual_limits:
   - not integrated with OpenAI ChatGPT first-party web/app runtime
   - no live provider API call in this test
