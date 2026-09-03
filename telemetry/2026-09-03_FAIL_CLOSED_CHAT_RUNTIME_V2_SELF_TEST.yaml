@@ -1,4 +1,4 @@
-schema_version: 1.0
+schema_version: 1.1
 run_id: FAIL-CLOSED-CHAT-RUNTIME-V2-20260903-01
 run_date: 2026-09-03
 producer_state: SELF_TEST_PASS
@@ -21,19 +21,23 @@ local_execution:
 ci_execution:
   platform: GITHUB_ACTIONS
   runner: ubuntu-latest
-  workflow: .github/workflows/fail_closed_chat_logger_ci.yml
-  run_id: 33766147148
-  head_sha: 45b9a65b8dd8d767521aca0b06b3e9913a8fa034
-  status: completed
-  conclusion: success
-  job_id: 100684412532
-  steps:
+  v2_core_run:
+    run_id: 33766147148
+    head_sha: 45b9a65b8dd8d767521aca0b06b3e9913a8fa034
+    status: completed
+    conclusion: success
+    job_id: 100684412532
+  network_replica_run:
+    run_id: 33766641183
+    head_sha: 1e5bddb348fe2b21e733434d7b183801bd2cac89
+    status: completed
+    conclusion: success
+    job_id: 100686103775
     current_openai_sdk_install: SUCCESS
-    responses_sdk_surface_smoke: SUCCESS
-    original_prototype_tests: SUCCESS
-    production_candidate_v1_tests: SUCCESS
+    responses_create_retrieve_surface_smoke: SUCCESS
     durable_outbox_v2_tests: SUCCESS
-    compile_candidates: SUCCESS
+    remote_sink_compile: SUCCESS
+    live_github_network_replica_write_readback_cleanup: SUCCESS
 cases:
   - {id: V2-01, claim: strict local commit plus replica ACK protects both input and output boundaries, result: PASS}
   - {id: V2-02, claim: user replica failure leaves durable PENDING outbox and blocks model invocation, result: PASS}
@@ -46,21 +50,33 @@ cases:
   - {id: V2-09, claim: FULL-synchronous committed event survives immediate os._exit and verifies after reopen, result: PASS}
   - {id: V2-10, claim: OpenAI Responses adapter controlled shape supports nonstream output_text and response.output_text.delta streaming, result: PASS}
   - {id: V2-11, claim: conflicting replay of one event identity fails closed, result: PASS}
+  - {id: V2-NET-01, claim: real network ReplicaSink performs provider PUT then exact GET readback before ACK and synthetic artifact cleanup succeeds, result: PASS}
 closed_gap_from_v1:
   gap: asynchronous/local-authoritative remote failure could be forgotten after process crash because replication intent was not durable
   v2_fix: replication_outbox row is inserted in the same SQLite transaction as the event whenever a replica is configured
   recovery: pending_replications plus retry_pending after restart
   status: SELF_TEST_PASS_AND_CI_PASS
+real_network_replica_evidence:
+  sink_path: tools/github_contents_replica_sink.py
+  sink_blob_sha: aa9ed4db567f150bd277315aed4319034f210780
+  provider: GITHUB_CONTENTS_API
+  credential: GITHUB_ACTIONS_EPHEMERAL_GITHUB_TOKEN
+  data_class: NON_SENSITIVE_SYNTHETIC_EVENT_ONLY
+  synchronous_sequence: LOCAL_COMMIT_AND_OUTBOX -> REMOTE_PUT -> REMOTE_GET_EXACT_READBACK -> ACK_RECEIPT
+  post_test_cleanup: PASS
+  post_cleanup_external_check: telemetry/ci_remote_replica returns provider 404
+  production_chat_backend_designation: NOT_DESIGNATED
 current_api_grounding:
   responses_create: CURRENT_OFFICIAL_SURFACE_CONFIRMED_2026_09_03
   streamed_output_text_delta: CURRENT_OFFICIAL_SURFACE_CONFIRMED_2026_09_03
   response_retrieve_starting_after_sequence_number: CURRENT_OFFICIAL_SURFACE_CONFIRMED_2026_09_03_POTENTIAL_MIDSTREAM_RECOVERY_PRIMITIVE
 live_dependencies_and_nonclaims:
   live_openai_provider_call: BLOCKED_NO_API_CREDENTIAL_IN_EXECUTION_RUNTIME
-  real_independent_cloud_replica_sink: NOT_IMPLEMENTED
+  real_network_replica_mechanism: VERIFIED_BY_PRODUCER_SELF_TEST_ON_GITHUB_CONTENTS_API_SYNTHETIC_EVENT
+  google_drive_or_private_archive_replica_sink: NOT_IMPLEMENTED
   provider_call_exactly_once: NOT_CLAIMED
   midstream_provider_resume_reconciliation: NOT_IMPLEMENTED
   chatgpt_first_party_web_app_interception: NOT_IMPLEMENTED_NOT_CONTROLLABLE_FROM_CURRENT_RUNTIME
   independent_gdva_behavioral_validation: PENDING
   independent_external_code_audit: PENDING_BACKEND
-promotion_ceiling: PRODUCTION_CANDIDATE_SELF_TEST_PASS
+promotion_ceiling: PRODUCTION_CANDIDATE_V2_SELF_TEST_AND_REAL_NETWORK_REPLICA_PASS
