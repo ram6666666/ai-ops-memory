@@ -9,8 +9,13 @@ on:
       - 'tools/test_fail_closed_chat_runtime.py'
       - 'tools/fail_closed_chat_runtime_v2.py'
       - 'tools/test_fail_closed_chat_runtime_v2.py'
+      - 'tools/github_contents_replica_sink.py'
+      - 'tools/live_github_replica_smoke.py'
       - '.github/workflows/fail_closed_chat_logger_ci.yml'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   test:
@@ -30,7 +35,8 @@ jobs:
           from openai import OpenAI
           client = OpenAI()
           assert callable(client.responses.create)
-          print('responses.create surface available')
+          assert callable(client.responses.retrieve)
+          print('responses.create/retrieve surfaces available')
           PY
       - name: Run original prototype tests
         env:
@@ -50,10 +56,20 @@ jobs:
         run: |
           cd tools
           python -m unittest -v test_fail_closed_chat_runtime_v2.py
-      - name: Compile candidates
+      - name: Compile candidates and remote sink
         run: |
           python -m py_compile \
             tools/fail_closed_chat_runtime.py \
             tools/test_fail_closed_chat_runtime.py \
             tools/fail_closed_chat_runtime_v2.py \
-            tools/test_fail_closed_chat_runtime_v2.py
+            tools/test_fail_closed_chat_runtime_v2.py \
+            tools/github_contents_replica_sink.py \
+            tools/live_github_replica_smoke.py
+      - name: Live GitHub network ReplicaSink write-readback-cleanup smoke
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+        run: |
+          cd tools
+          python live_github_replica_smoke.py
