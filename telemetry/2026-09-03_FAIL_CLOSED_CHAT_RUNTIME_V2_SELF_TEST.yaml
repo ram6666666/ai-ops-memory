@@ -1,0 +1,66 @@
+schema_version: 1.0
+run_id: FAIL-CLOSED-CHAT-RUNTIME-V2-20260903-01
+run_date: 2026-09-03
+producer_state: SELF_TEST_PASS
+implementation_role: IMPLEMENTER_PRODUCER
+independent_acceptance: NOT_CLAIMED
+candidate:
+  runtime_path: tools/fail_closed_chat_runtime_v2.py
+  runtime_blob_sha: 7744e523c20e839b560d4ebe25847357b9e0c9d6
+  test_path: tools/test_fail_closed_chat_runtime_v2.py
+  test_blob_sha: e48ad5c5ddf259bf65038d2a889ff7213c78cbd1
+  critical_contract: >-
+    event and durable replication intent are committed atomically to local SQLite before the boundary; strict mode additionally requires replica ACK before provider call or delivery/render; asynchronous mode retains a durable PENDING outbox for restart-safe retry.
+local_execution:
+  runtime: local_ephemeral_python_runtime
+  warnings_policy: ResourceWarning treated as error
+  total: 11
+  passed: 11
+  failed: 0
+  compile_check: PASS
+ci_execution:
+  platform: GITHUB_ACTIONS
+  runner: ubuntu-latest
+  workflow: .github/workflows/fail_closed_chat_logger_ci.yml
+  run_id: 33766147148
+  head_sha: 45b9a65b8dd8d767521aca0b06b3e9913a8fa034
+  status: completed
+  conclusion: success
+  job_id: 100684412532
+  steps:
+    current_openai_sdk_install: SUCCESS
+    responses_sdk_surface_smoke: SUCCESS
+    original_prototype_tests: SUCCESS
+    production_candidate_v1_tests: SUCCESS
+    durable_outbox_v2_tests: SUCCESS
+    compile_candidates: SUCCESS
+cases:
+  - {id: V2-01, claim: strict local commit plus replica ACK protects both input and output boundaries, result: PASS}
+  - {id: V2-02, claim: user replica failure leaves durable PENDING outbox and blocks model invocation, result: PASS}
+  - {id: V2-03, claim: assistant replica failure blocks delivery and later retry reuses committed output without model reinvocation, result: PASS}
+  - {id: V2-04, claim: streamed text delta is committed and ACKed before yield/render, result: PASS}
+  - {id: V2-05, claim: streamed replica failure blocks affected delta from rendering, result: PASS}
+  - {id: V2-06, claim: asynchronous replication failure survives process/runtime reopen through durable outbox and retry_pending reaches ACKED, result: PASS}
+  - {id: V2-07, claim: filesystem replica is atomic and idempotent, result: PASS}
+  - {id: V2-08, claim: 24 concurrent same-conversation local commits form one monotonic valid hash chain, result: PASS}
+  - {id: V2-09, claim: FULL-synchronous committed event survives immediate os._exit and verifies after reopen, result: PASS}
+  - {id: V2-10, claim: OpenAI Responses adapter controlled shape supports nonstream output_text and response.output_text.delta streaming, result: PASS}
+  - {id: V2-11, claim: conflicting replay of one event identity fails closed, result: PASS}
+closed_gap_from_v1:
+  gap: asynchronous/local-authoritative remote failure could be forgotten after process crash because replication intent was not durable
+  v2_fix: replication_outbox row is inserted in the same SQLite transaction as the event whenever a replica is configured
+  recovery: pending_replications plus retry_pending after restart
+  status: SELF_TEST_PASS_AND_CI_PASS
+current_api_grounding:
+  responses_create: CURRENT_OFFICIAL_SURFACE_CONFIRMED_2026_09_03
+  streamed_output_text_delta: CURRENT_OFFICIAL_SURFACE_CONFIRMED_2026_09_03
+  response_retrieve_starting_after_sequence_number: CURRENT_OFFICIAL_SURFACE_CONFIRMED_2026_09_03_POTENTIAL_MIDSTREAM_RECOVERY_PRIMITIVE
+live_dependencies_and_nonclaims:
+  live_openai_provider_call: BLOCKED_NO_API_CREDENTIAL_IN_EXECUTION_RUNTIME
+  real_independent_cloud_replica_sink: NOT_IMPLEMENTED
+  provider_call_exactly_once: NOT_CLAIMED
+  midstream_provider_resume_reconciliation: NOT_IMPLEMENTED
+  chatgpt_first_party_web_app_interception: NOT_IMPLEMENTED_NOT_CONTROLLABLE_FROM_CURRENT_RUNTIME
+  independent_gdva_behavioral_validation: PENDING
+  independent_external_code_audit: PENDING_BACKEND
+promotion_ceiling: PRODUCTION_CANDIDATE_SELF_TEST_PASS
