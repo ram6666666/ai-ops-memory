@@ -13,6 +13,7 @@ on:
       - 'tools/live_github_replica_smoke.py'
       - 'tools/google_drive_replica_sink.py'
       - 'tools/test_google_drive_replica_sink.py'
+      - 'tools/run_fail_closed_chat.py'
       - '.github/workflows/fail_closed_chat_logger_ci.yml'
   workflow_dispatch:
 
@@ -64,7 +65,7 @@ jobs:
         run: |
           cd tools
           python -m unittest -v test_google_drive_replica_sink.py
-      - name: Compile candidates and replica sinks
+      - name: Compile candidates, replica sinks and CLI
         run: |
           python -m py_compile \
             tools/fail_closed_chat_runtime.py \
@@ -74,7 +75,10 @@ jobs:
             tools/github_contents_replica_sink.py \
             tools/live_github_replica_smoke.py \
             tools/google_drive_replica_sink.py \
-            tools/test_google_drive_replica_sink.py
+            tools/test_google_drive_replica_sink.py \
+            tools/run_fail_closed_chat.py
+      - name: Verify runnable CLI surface without credentials
+        run: python tools/run_fail_closed_chat.py --help
       - name: Live GitHub network ReplicaSink write-readback-cleanup smoke
         env:
           GITHUB_TOKEN: ${{ github.token }}
