@@ -36,6 +36,7 @@ Qoder Release Notes
 IDE Release Notes
 JetBrains Plugin Release Notes
 Qoder CLI Release Notes
+Agent SDK Release Notes
 Cloud Agents Release Notes
 QoderWork Release Notes
 QoderWake Release Notes
@@ -44,6 +45,7 @@ Credits
 Pricing
 Billing
 Events
+Efficient Model Tier: Free for Paid Users
 September Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
 Qoder 1st Anniversary × Qwen3.8-Max Official Launch: Claim 800–2,000 Model Calls
@@ -58,6 +60,25 @@ Copy page
 Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
+​
+September 3, 2026
+Qoder 0.1.6
+Everyday Polish
+Features
+Batch tasks archiving
+: Multi-select tasks in the sidebar to archive them, and switch work modes with one click.
+Artifact preview in a separate window
+: Open agent-generated artifacts in a standalone window.
+Clickable terminal links
+: HTTP/HTTPS links in the terminal now open directly.
+Improvements
+Faster app startup and smoother streaming in long sessions.
+Reduced wait time before the first response of a new task.
+Bug Fixes
+Fixed occasional duplicate sign-ins and being unable to sign in again after returning from browser authorization.
+Fixed manually selected models being switched back to the default.
+Fixed session messages overlapping after resizing panes.
+Fixed sidebar drag-and-drop reordering failing with many sessions.
 ​
 September 1, 2026
 Qoder 0.1.4
@@ -147,15 +168,13 @@ Next
 Qoder
 Products & Capabilities
 Qoder
-Qoder IDE
-Qoder JetBrains Plugin
-Qoder CLI
-Qoder Mobile
-Qoder Cloud Agents
-Qoder Agent SDK
+Mobile
+IDE
+JetBrains Plugin
+CLI
+Agent SDK
+Cloud Agents
 QoderWake
-Qoder Security
-Qoder Voice
 Get Started
 Enterprise
 Price
@@ -190,6 +209,7 @@ Qoder Release Notes
 IDE Release Notes
 JetBrains Plugin Release Notes
 Qoder CLI Release Notes
+Agent SDK Release Notes
 Cloud Agents Release Notes
 QoderWork Release Notes
 QoderWake Release Notes
@@ -198,6 +218,7 @@ Credits
 Pricing
 Billing
 Events
+Efficient Model Tier: Free for Paid Users
 September Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
 Qoder 1st Anniversary × Qwen3.8-Max Official Launch: Claim 800–2,000 Model Calls

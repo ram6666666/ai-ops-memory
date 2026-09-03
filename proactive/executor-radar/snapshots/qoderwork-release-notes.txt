@@ -36,6 +36,7 @@ Qoder 更新日志
 IDE 更新日志
 JetBrains 插件更新日志
 Qoder CLI 更新日志
+Agent SDK 更新日志
 Cloud Agents 更新日志
 QoderWork 更新日志
 QoderWake 更新日志
@@ -44,6 +45,7 @@ Credits
 价格
 计费
 事件
+「经济」(Efficient) 模型档位开放免费使用
 9 月开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
 Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用
@@ -747,15 +749,13 @@ QoderWake 的版本更新记录。
 Qoder
 产品及能力
 Qoder
-Qoder IDE
-Qoder JetBrains Plugin
-Qoder CLI
-Qoder Mobile
-Qoder Cloud Agents
-Qoder Agent SDK
+移动端
+IDE
+JetBrains 插件
+CLI
+Agent SDK
+Cloud Agents
 QoderWake
-Qoder Security
-Qoder Voice
 立即获取
 企业版
 价格
@@ -790,6 +790,7 @@ Qoder 更新日志
 IDE 更新日志
 JetBrains 插件更新日志
 Qoder CLI 更新日志
+Agent SDK 更新日志
 Cloud Agents 更新日志
 QoderWork 更新日志
 QoderWake 更新日志
@@ -798,6 +799,7 @@ Credits
 价格
 计费
 事件
+「经济」(Efficient) 模型档位开放免费使用
 9 月开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
 Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用
