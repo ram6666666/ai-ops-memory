@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "slug": "kimi-work-release-notes",
+      "name": "Kimi Work Release Notes",
+      "vendor": "Moonshot AI / Kimi",
+      "url": "https://www.kimi.ai/zh-hans/help/kimi-work/release-notes",
+      "source_class": "official_release_notes"
+    },
+    {
+      "slug": "qoderwork-release-notes",
+      "name": "QoderWork Release Notes",
+      "vendor": "Qoder",
+      "url": "https://docs.qoder.com/zh/release-notes/qoderwork",
+      "source_class": "official_release_notes"
+    },
+    {
+      "slug": "qoder-release-notes",
+      "name": "Qoder Release Notes",
+      "vendor": "Qoder",
+      "url": "https://docs.qoder.com/release-notes/qoder",
+      "source_class": "official_release_notes"
+    },
+    {
+      "slug": "claude-code-feed",
+      "name": "Claude Code Changelog Feed",
+      "vendor": "Anthropic",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/feed.xml",
+      "source_class": "official_repository_feed"
+    },
+    {
+      "slug": "openai-chatgpt-release-notes",
+      "name": "ChatGPT / Work / Codex Release Notes",
+      "vendor": "OpenAI",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source_class": "official_release_notes"
+    },
+    {
+      "slug": "openai-codex-changelog",
+      "name": "Codex Changelog",
+      "vendor": "OpenAI",
+      "url": "https://help.openai.com/en/articles/11428266-codex-changelog",
+      "source_class": "official_release_notes"
+    }
+  ],
+  "high_priority_terms": [
+    "filesystem", "file system", "local file", "in-place", "working directory", "root directory", "worktree",
+    "diff", "rollback", "checkpoint", "resume", "recovery", "restore", "persist", "persistence",
+    "background session", "background task", "long-running", "long running", "daemon", "queue", "concurrent",
+    "scheduled task", "schedule", "permission", "approval", "sandbox", "readback", "integrity", "provenance",
+    "本地文件", "原位", "工作目录", "根目录", "回滚", "检查点", "恢复", "持久", "后台任务", "长任务",
+    "定时任务", "权限", "审批", "沙箱", "队列", "并发"
+  ]
+}
