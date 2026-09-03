@@ -1,0 +1,56 @@
+name: AI Executor Radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 8 * * *"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: ai-executor-radar
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run deterministic radar
+        run: python3 proactive/executor-radar/radar.py
+
+      - name: Surface high-priority candidate in GitHub Issues
+        if: ${{ hashFiles('proactive/executor-radar/pending_alert.md') != '' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "[AI Executor Radar] high-priority capability change" \
+            --body-file proactive/executor-radar/pending_alert.md
+
+      - name: Remove transient notification payload
+        run: rm -f proactive/executor-radar/pending_alert.md
+
+      - name: Commit new evidence only
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No new evidence; leaving repository unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add proactive/executor-radar/state.json \
+                  proactive/executor-radar/events.jsonl \
+                  proactive/executor-radar/snapshots 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Only transient/untracked changes present; nothing to commit."
+            exit 0
+          fi
+          git commit -m "radar: capture AI executor capability-source changes"
+          git push
