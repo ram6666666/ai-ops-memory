@@ -11,6 +11,8 @@ on:
       - 'tools/test_fail_closed_chat_runtime_v2.py'
       - 'tools/github_contents_replica_sink.py'
       - 'tools/live_github_replica_smoke.py'
+      - 'tools/google_drive_replica_sink.py'
+      - 'tools/test_google_drive_replica_sink.py'
       - '.github/workflows/fail_closed_chat_logger_ci.yml'
   workflow_dispatch:
 
@@ -56,7 +58,13 @@ jobs:
         run: |
           cd tools
           python -m unittest -v test_fail_closed_chat_runtime_v2.py
-      - name: Compile candidates and remote sink
+      - name: Run Google Drive ReplicaSink controlled tests
+        env:
+          PYTHONWARNINGS: error::ResourceWarning
+        run: |
+          cd tools
+          python -m unittest -v test_google_drive_replica_sink.py
+      - name: Compile candidates and replica sinks
         run: |
           python -m py_compile \
             tools/fail_closed_chat_runtime.py \
@@ -64,7 +72,9 @@ jobs:
             tools/fail_closed_chat_runtime_v2.py \
             tools/test_fail_closed_chat_runtime_v2.py \
             tools/github_contents_replica_sink.py \
-            tools/live_github_replica_smoke.py
+            tools/live_github_replica_smoke.py \
+            tools/google_drive_replica_sink.py \
+            tools/test_google_drive_replica_sink.py
       - name: Live GitHub network ReplicaSink write-readback-cleanup smoke
         env:
           GITHUB_TOKEN: ${{ github.token }}
