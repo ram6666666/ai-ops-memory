@@ -2,6 +2,9 @@ name: AI Executor Radar
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "proactive/executor-radar/manual-probe.txt"
   schedule:
     - cron: "17 8 * * *"
 
