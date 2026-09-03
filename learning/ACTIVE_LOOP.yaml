@@ -1,0 +1,51 @@
+schema_version: 1.0
+status: ACTIVE
+started_at: 2026-09-03T02:59:25+02:00
+purpose: cumulative operational learning and capability promotion
+learning_sources:
+  - PROACTIVE_LIBRARY
+  - WORK_DERIVED_LEARNING
+storage_routing:
+  generalizable: ram6666666/ai-ops-memory
+  user_specific_binding: ram6666666/ai-ops-private
+  runtime_mirror: Google Drive AI Environment Learning Playbook — Runtime Manual
+  scientific_or_task_authority: EXTERNAL_PROJECT_OR_GLOBAL_CONTROL_ONLY
+per_operation_loop:
+  - identify_environment_and_operation
+  - retrieve_narrow_existing_card_and_private_binding_if_needed
+  - confirm_current_tool_schema_when_material
+  - reuse_existing_verified_or_stable_route
+  - execute_and_verify_postcondition
+  - classify_new_information_only
+  - route_public_private_or_no_record
+  - update_existing_card_before_creating_duplicate
+  - promote_maturity_only_with_evidence
+promotion_model:
+  - OBSERVED
+  - REPEATED
+  - STABLE_PLAYBOOK
+  - WRAPPER_CANDIDATE
+  - VERIFIED_CAPABILITY
+  - DEPRECATED
+proactive_scan_targets:
+  - common file create_update_move_copy_export_import operations
+  - Git and GitHub read_update_multi_file_commit workflows
+  - Drive Docs Sheets Slides reliable edit and transfer routes
+  - checkpoint receipt lease state-transition bookkeeping
+  - Work Claude Codex handoff and resume patterns
+  - local Git LaTeX PDF Python numerical and literature workflows
+  - cross-model file relay and provenance
+capture_gate:
+  new_information_required: true
+  routine_stable_success_prose_log: false
+  unverified_claim_status: CANDIDATE_NEEDS_RUNTIME_VALIDATION
+  secret_capture: forbidden
+promotion_gate:
+  verified_capability_requires:
+    - executable implementation or native abstraction
+    - explicit input_output_contract
+    - bounded_side_effects
+    - structured_failure_classes
+    - real_execution_evidence
+    - postcondition_or_readback_verification
+cost_goal: maximize useful semantic intelligence per unit of high-capability model compute
