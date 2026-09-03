@@ -7,6 +7,8 @@ on:
       - 'tools/test_fail_closed_chat_logger.py'
       - 'tools/fail_closed_chat_runtime.py'
       - 'tools/test_fail_closed_chat_runtime.py'
+      - 'tools/fail_closed_chat_runtime_v2.py'
+      - 'tools/test_fail_closed_chat_runtime_v2.py'
       - '.github/workflows/fail_closed_chat_logger_ci.yml'
   workflow_dispatch:
 
@@ -36,12 +38,22 @@ jobs:
         run: |
           cd tools
           python -m unittest -v test_fail_closed_chat_logger.py
-      - name: Run production candidate tests
+      - name: Run production candidate v1 tests
         env:
           PYTHONWARNINGS: error::ResourceWarning
         run: |
           cd tools
           python -m unittest -v test_fail_closed_chat_runtime.py
-      - name: Compile production candidate
+      - name: Run durable-outbox v2 candidate tests
+        env:
+          PYTHONWARNINGS: error::ResourceWarning
         run: |
-          python -m py_compile tools/fail_closed_chat_runtime.py tools/test_fail_closed_chat_runtime.py
+          cd tools
+          python -m unittest -v test_fail_closed_chat_runtime_v2.py
+      - name: Compile candidates
+        run: |
+          python -m py_compile \
+            tools/fail_closed_chat_runtime.py \
+            tools/test_fail_closed_chat_runtime.py \
+            tools/fail_closed_chat_runtime_v2.py \
+            tools/test_fail_closed_chat_runtime_v2.py
