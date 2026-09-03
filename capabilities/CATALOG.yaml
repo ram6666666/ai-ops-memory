@@ -97,19 +97,29 @@ capabilities:
   - id: FAIL_CLOSED_CHAT_BOUNDARY_LOGGER
     class: HARNESS_CAPABILITY
     maturity: WRAPPER_CANDIDATE
-    implementation: EXECUTABLE_PYTHON_PROTOTYPE
+    implementation: EXECUTABLE_PYTHON_PRODUCTION_CANDIDATE
     priority: P0
-    status: IMPLEMENTATION_PROTOTYPE_SELF_TEST_PASS
+    status: PRODUCTION_CANDIDATE_SELF_TEST_PASS
     operation_card: operations/FAIL_CLOSED_CHAT_LOGGING.md
-    implementation_path: tools/fail_closed_chat_logger.py
-    test_path: tools/test_fail_closed_chat_logger.py
-    evidence: telemetry/2026-09-03_FAIL_CLOSED_CHAT_LOGGER_SELF_TEST.yaml
-    critical_contract: durable user commit -> model call -> durable assistant commit -> delivery
-    current_backend: SQLITE_WAL_SYNCHRONOUS_FULL
+    implementation_path: tools/fail_closed_chat_runtime.py
+    provenance_prototype_path: tools/fail_closed_chat_logger.py
+    test_path: tools/test_fail_closed_chat_runtime.py
+    evidence: telemetry/2026-09-03_FAIL_CLOSED_CHAT_RUNTIME_CANDIDATE_SELF_TEST.yaml
+    critical_contract: local durable user commit + required replica ACK -> model call -> local durable assistant commit/chunk + required replica ACK -> delivery/render
+    local_backend: SQLITE_WAL_SYNCHRONOUS_FULL
+    replica_contract: PLUGGABLE_REPLICA_SINK_WITH_PERSISTED_ACK_RECEIPT
+    tested_secondary_replica: ATOMIC_FSYNC_FILESYSTEM
+    streaming_write_before_render: IMPLEMENTED_SELF_TEST_PASS
+    openai_responses_adapter: IMPLEMENTED_SDK_SURFACE_AND_CONTROLLED_SHAPE_TEST_PASS
+    live_openai_provider_call: BLOCKED_NO_CREDENTIAL
+    real_cloud_replica: NOT_IMPLEMENTED
+    provider_call_exactly_once: NOT_CLAIMED
+    midstream_crash_resume: NOT_IMPLEMENTED
     current_scope: EXTERNAL_API_CLIENT_OR_PERSONAL_HARNESS_ONLY
     chatgpt_first_party_runtime_integration: NOT_IMPLEMENTED
-    cloud_sync_critical_path: NOT_IMPLEMENTED
-    promotion_ceiling: IMPLEMENTATION_PROTOTYPE_SELF_TEST_PASS
+    independent_gdva_behavioral_validation: PENDING
+    independent_external_code_audit: PENDING_BACKEND
+    promotion_ceiling: PRODUCTION_CANDIDATE_SELF_TEST_PASS
 rules:
   claim_verified_capability_requires:
     - executable implementation/native single abstraction
