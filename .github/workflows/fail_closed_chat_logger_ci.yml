@@ -1,0 +1,22 @@
+name: Fail-Closed Chat Logger CI
+
+on:
+  push:
+    paths:
+      - 'tools/fail_closed_chat_logger.py'
+      - 'tools/test_fail_closed_chat_logger.py'
+      - '.github/workflows/fail_closed_chat_logger_ci.yml'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run fail-closed logger tests
+        run: |
+          cd tools
+          python -m unittest -v test_fail_closed_chat_logger.py
