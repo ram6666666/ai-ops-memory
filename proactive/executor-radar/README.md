@@ -1,6 +1,8 @@
 # AI Executor Radar
 
-Status: `AUTOMATED_MONITORING / OBSERVATION_ONLY`
+Status: `VERIFIED_LIVE / PARTIAL_SOURCE_COVERAGE`
+
+Live validation: GitHub Actions run #2 (`33702342405`) completed successfully on 2026-09-03 after a dedicated push probe. The run generated and pushed baseline state/evidence that was read back from the repository. Current machine-fetchable baseline coverage is Kimi Work, QoderWork, Qoder, and Claude Code. The two configured OpenAI Help Center sources currently return HTTP 403 to the deterministic collector and remain `FETCH_FAILED`; they require an alternate official machine-readable source or fetch route before coverage is complete.
 
 Purpose: automatically watch AI executor / work-agent products for operational capabilities that matter to the user's control-plane workflow, without consuming scarce ChatGPT scheduled-task slots or requiring the user to manually test routine product changes.
 
