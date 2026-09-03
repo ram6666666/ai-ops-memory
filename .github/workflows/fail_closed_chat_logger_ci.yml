@@ -9,6 +9,8 @@ on:
       - 'tools/test_fail_closed_chat_runtime.py'
       - 'tools/fail_closed_chat_runtime_v2.py'
       - 'tools/test_fail_closed_chat_runtime_v2.py'
+      - 'tools/fail_closed_stream_buffer.py'
+      - 'tools/test_fail_closed_stream_buffer.py'
       - 'tools/github_contents_replica_sink.py'
       - 'tools/live_github_replica_smoke.py'
       - 'tools/google_drive_replica_sink.py'
@@ -59,6 +61,12 @@ jobs:
         run: |
           cd tools
           python -m unittest -v test_fail_closed_chat_runtime_v2.py
+      - name: Run bounded-frame write-before-render tests
+        env:
+          PYTHONWARNINGS: error::ResourceWarning
+        run: |
+          cd tools
+          python -m unittest -v test_fail_closed_stream_buffer.py
       - name: Run Google Drive ReplicaSink controlled tests
         env:
           PYTHONWARNINGS: error::ResourceWarning
@@ -72,6 +80,8 @@ jobs:
             tools/test_fail_closed_chat_runtime.py \
             tools/fail_closed_chat_runtime_v2.py \
             tools/test_fail_closed_chat_runtime_v2.py \
+            tools/fail_closed_stream_buffer.py \
+            tools/test_fail_closed_stream_buffer.py \
             tools/github_contents_replica_sink.py \
             tools/live_github_replica_smoke.py \
             tools/google_drive_replica_sink.py \
