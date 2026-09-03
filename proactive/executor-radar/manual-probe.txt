@@ -1,2 +1,3 @@
 manual_probe: 2026-09-03T03:04:43+02:00
-purpose: trigger first live AI Executor Radar baseline run
+purpose: trigger AI Executor Radar live validation
+attempt: 2
