@@ -5,6 +5,8 @@ on:
     paths:
       - 'tools/fail_closed_chat_logger.py'
       - 'tools/test_fail_closed_chat_logger.py'
+      - 'tools/fail_closed_chat_runtime.py'
+      - 'tools/test_fail_closed_chat_runtime.py'
       - '.github/workflows/fail_closed_chat_logger_ci.yml'
   workflow_dispatch:
 
@@ -16,7 +18,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run fail-closed logger tests
+      - name: Install current OpenAI Python SDK
+        run: python -m pip install --upgrade openai
+      - name: Verify current Responses SDK surface exists
+        env:
+          OPENAI_API_KEY: sk-ci-surface-check-not-a-live-key
+        run: |
+          python - <<'PY'
+          from openai import OpenAI
+          client = OpenAI()
+          assert callable(client.responses.create)
+          print('responses.create surface available')
+          PY
+      - name: Run original prototype tests
+        env:
+          PYTHONWARNINGS: error::ResourceWarning
         run: |
           cd tools
           python -m unittest -v test_fail_closed_chat_logger.py
+      - name: Run production candidate tests
+        env:
+          PYTHONWARNINGS: error::ResourceWarning
+        run: |
+          cd tools
+          python -m unittest -v test_fail_closed_chat_runtime.py
+      - name: Compile production candidate
+        run: |
+          python -m py_compile tools/fail_closed_chat_runtime.py tools/test_fail_closed_chat_runtime.py
