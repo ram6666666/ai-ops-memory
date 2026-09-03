@@ -1,6 +1,7 @@
 schema_version: 1.0
-status: ACTIVE
+status: ACTIVE_INITIALIZED_VERIFIED
 repository_role: DURABLE_OPERATIONAL_KNOWLEDGE_AND_CAPABILITY_LAYER
+bootstrap_commit: fa60467bb953183e5983a7333fbcd8e94ea164b9
 canonical_scope:
   - environment profiles
   - reusable operation recipes
@@ -34,4 +35,6 @@ source_priority:
 stale_schema_action: REVALIDATE_AND_DEPRECATE_OLD_ROUTE
 secret_storage: FORBIDDEN
 authority_boundary: OPERATIONAL_ONLY_NO_PROJECT_OR_SCIENTIFIC_AUTHORITY
-initialization_status: BOOTSTRAPPING
+initialization_status: VERIFIED_READBACK
+initial_profiles: [GOOGLE_DRIVE_DOCS, GITHUB]
+initial_learning_sources: [PROACTIVE_LIBRARY, WORK_DERIVED_LEARNING]
