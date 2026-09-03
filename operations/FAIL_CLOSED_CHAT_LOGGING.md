@@ -1,95 +1,86 @@
 # Fail-Closed Chat Logging
 
-status: PRODUCTION_CANDIDATE_SELF_TEST_PASS
+status: PRODUCTION_CANDIDATE_V2_SELF_TEST_AND_CI_PASS
 maturity: WRAPPER_CANDIDATE
 scope: external API/client/personal-harness interaction boundary
 not_scope: OpenAI ChatGPT first-party web/app runtime
 
-## Contract
+## Required boundary contract
 
-Strict critical path:
+Strict mode:
 
-`user input -> local durable commit -> required replica ACK -> model call -> assistant output/chunk -> local durable commit -> required replica ACK -> delivery/render`
+`user input -> atomic local event+replication-intent commit -> replica ACK -> provider call -> assistant output/chunk -> atomic local event+replication-intent commit -> replica ACK -> delivery/render`
 
-The harness fails closed at every boundary:
+Fail-closed invariants:
 
-- if the user-input local commit fails, the model call does not execute;
-- if strict replica ACK for the user event fails, the model call does not execute;
-- if assistant output local commit or required replica ACK fails, the output is not delivered;
-- in streaming mode, each text delta is committed and ACKed before that delta is yielded/rendered.
+- user local commit failure blocks provider invocation;
+- user replica ACK failure blocks provider invocation in strict mode;
+- assistant local commit or required replica ACK failure blocks delivery;
+- each streamed output-text delta is committed and ACKed before that delta is yielded/rendered.
 
-A weaker local-authoritative mode is implemented for deployments that deliberately choose asynchronous cloud replication, but it is not the strict default for the strongest completeness claim.
+Local-authoritative/asynchronous-cloud mode is also supported, but it must not lose replication intent: when a replica is configured, the event and a `PENDING` replication-outbox record are written in the same local SQLite transaction. A remote failure can therefore be retried after process/runtime restart.
 
-## Production-candidate implementation
+## Current frozen producer candidate
 
-Primary candidate:
+- runtime: `tools/fail_closed_chat_runtime_v2.py`
+- runtime blob: `7744e523c20e839b560d4ebe25847357b9e0c9d6`
+- tests: `tools/test_fail_closed_chat_runtime_v2.py`
+- test blob: `e48ad5c5ddf259bf65038d2a889ff7213c78cbd1`
+- evidence: `telemetry/2026-09-03_FAIL_CLOSED_CHAT_RUNTIME_V2_SELF_TEST.yaml`
+- GitHub Actions run: `33766147148`
+- CI head: `45b9a65b8dd8d767521aca0b06b3e9913a8fa034`
+- CI conclusion: `success`
 
-- `tools/fail_closed_chat_runtime.py`
-- tests: `tools/test_fail_closed_chat_runtime.py`
-- evidence: `telemetry/2026-09-03_FAIL_CLOSED_CHAT_RUNTIME_CANDIDATE_SELF_TEST.yaml`
+The earlier `tools/fail_closed_chat_runtime.py` candidate and the initial `tools/fail_closed_chat_logger.py` prototype remain provenance only. V2 materially changes durability semantics and supersedes them for any new GDVA campaign.
 
-Core mechanisms:
+## V2 mechanisms
 
-- SQLite WAL local primary;
+- SQLite WAL primary;
 - SQLite `synchronous=FULL`;
-- `BEGIN IMMEDIATE` serialized event append;
-- monotonically increasing per-conversation sequence;
-- deterministic event ids for replay/idempotency;
-- SHA-256 hash chain;
-- persisted replica ACK receipts keyed by event identity/hash;
-- pluggable `ReplicaSink` contract;
+- `BEGIN IMMEDIATE` serialized append;
+- per-conversation monotonically increasing sequence;
+- deterministic event IDs with conflicting replay fail-closed;
+- SHA-256 event hash chain;
+- replica ACK receipts bound to event hash;
+- **durable replication outbox** atomically created with each event whenever a replica is configured;
+- `PENDING -> ACKED` replication state;
+- retry attempt/error persistence;
+- restart-safe `pending_replications()` / `retry_pending()`;
+- pluggable `ReplicaSink`;
 - atomic fsync-backed filesystem replica for second-sink testing;
-- strict `REMOTE_ACK_REQUIRED` path;
-- OpenAI Responses API adapter using `responses.create` and streamed `response.output_text.delta` events;
-- non-stream recovery reuses a locally committed assistant result after remote-ACK failure instead of invoking the model again;
-- streaming write-before-render at delta granularity.
+- strict synchronous replica-ACK mode;
+- optional local-authoritative asynchronous-replication mode with durable outbox;
+- OpenAI Responses API adapter;
+- streaming write-before-render at `response.output_text.delta` granularity;
+- non-stream retry after assistant replica-ACK failure reuses already committed assistant output instead of invoking the model again.
 
-The original five-case prototype remains at `tools/fail_closed_chat_logger.py` as provenance; the runtime candidate supersedes it for productionization work.
+## Evidence
 
-## Current self-test evidence
+Local V2 suite: **11/11 PASS**, with `ResourceWarning` treated as a test error and compile check PASS.
 
-Local production-candidate run: 12/12 PASS with `ResourceWarning` promoted to test failure. During the first 8-case run, connection lifecycle warnings exposed that Python's SQLite context manager commits/rolls back but does not itself close the connection. The candidate was corrected to explicit closing semantics and the enlarged 12-case suite then passed cleanly.
+GitHub Actions run `33766147148` on `ubuntu-latest` also completed successfully. The job independently passed current OpenAI SDK installation/surface smoke, original prototype tests, V1 tests, V2 durable-outbox tests, and compile checks.
 
-Coverage now includes:
+V2 closes a specific V1 production gap: asynchronous replication failure is no longer a volatile fact that can disappear with process death. The replication intent now exists in the same durable transaction as the source event and was tested across reopen/retry.
 
-1. strict local + replica ACK on both user/assistant paths;
-2. remote user ACK failure blocks model invocation;
-3. remote assistant ACK failure blocks delivery;
-4. streaming chunk commit/ACK before yield;
-5. streaming remote failure blocks the affected chunk from render;
-6. optional local-authoritative/asynchronous-replica policy;
-7. controlled OpenAI Responses adapter shape test;
-8. idempotent replay without duplicate replica writes/model call when output is already committed;
-9. recovery after assistant remote-ACK failure without model reinvocation;
-10. atomic/idempotent filesystem replica;
-11. 24 concurrent same-conversation commits preserving one valid sequence/hash chain;
-12. committed data surviving immediate process `os._exit` and verifying after reopen.
+## Current official API grounding
 
-GitHub Actions run `33765340011` on `ubuntu-latest` completed successfully. The CI installs the current `openai` Python package and verifies that `client.responses.create` exists, then runs both the original prototype and production-candidate tests and compiles the candidate. No live provider request is made because no API credential is available to this execution environment.
+As rechecked on 2026-09-03, OpenAI's current Responses API accepts a model/input response creation request, SDKs expose `output_text`, and streamed responses emit `response.output_text.delta`. The response-retrieval API also exposes `starting-after` using streamed event sequence numbers. The latter is a promising primitive for future interrupted-stream reconciliation, but V2 does not yet claim a correct mid-stream recovery protocol.
 
-## Current provider/API grounding
+## Residual production gates / nonclaims
 
-The current OpenAI Responses API supports creating a response with a model and input, exposes `output_text` in SDKs, and supports streaming events including `response.output_text.delta`. The candidate adapter deliberately targets that current Responses surface rather than the deprecated legacy Completions path.
+- **Live provider call:** not yet run because this execution runtime does not expose an OpenAI API credential. SDK/API shape tests are not a substitute for a real provider call.
+- **Real independent cloud replica:** not implemented yet. The `ReplicaSink` contract, strict ACK behavior and durable outbox are implemented; the currently tested second sink is an fsync-backed filesystem replica, not Drive/object storage/database across an independent network durability domain.
+- **Provider exactly-once:** not claimed. A crash after provider generation but before assistant local commit may cause a provider reinvocation on retry. A locally committed assistant output does avoid reinvocation during replica-ACK recovery.
+- **Mid-stream crash continuation:** not implemented/accepted. Every delta already rendered was committed first, but resuming the provider stream after a process crash without duplicate or divergent continuation still needs a frozen protocol and tests.
+- **Official ChatGPT app interception:** not implemented and cannot be forced from the current ChatGPT runtime. This harness protects interactions that actually pass through the external client/harness.
+- **Independent acceptance:** pending. Producer self-tests and GitHub CI do not satisfy GDVA's independent behavioral branch or external implementation/code-audit branch.
 
-## Residual limits / blocked production gates
+## Next production work
 
-The following are still explicit blockers or non-claims:
+1. implement and fault-test a genuine network/cloud `ReplicaSink`;
+2. run a credentialed real OpenAI Responses API call through this boundary;
+3. define interrupted-stream recovery using provider response IDs/sequence numbers where valid, then fault-test it;
+4. submit this exact V2 identity to GDVA as a new campaign generation because V2 materially supersedes V1;
+5. run independent behavioral validation and independent external implementation/code audit before any `VERIFIED_CAPABILITY` / `ACCEPTED_VERIFIED_LIVE` claim.
 
-- **Live OpenAI provider call not yet executed.** The adapter and current SDK surface are tested, but a real request requires an API credential available to the external harness runtime.
-- **Real cloud replica not yet implemented/tested.** The `ReplicaSink` contract and strict ACK semantics exist; the concrete secondary sink tested so far is an fsync-backed filesystem replica, not Google Drive/object storage/database over an independent network path.
-- **Provider-call exactly-once is not claimed.** If the process dies after the provider has generated output but before that output reaches the local durable assistant commit, a retry may invoke the provider again. If local assistant commit succeeded but remote ACK/delivery failed, the current recovery path does avoid a second model call.
-- **Mid-stream crash recovery is incomplete.** Every already rendered delta has been durably recorded first, but resuming a provider stream after a process crash without duplicate/divergent continuation is not yet frozen or accepted.
-- **First-party ChatGPT web/app remains outside the boundary.** This candidate can protect an API client/personal harness; it cannot intercept the official ChatGPT application's internal inference boundary.
-- **Independent acceptance is pending.** Producer self-tests and GitHub CI do not satisfy GDVA behavioral validation or the independent external implementation/code-audit branch.
-
-## Next production steps
-
-1. bind a real OpenAI Responses API client credential in a secure external runtime and run live write-before-call/write-before-deliver tests;
-2. implement at least one genuine cloud `ReplicaSink` with provider-returned durable ACK semantics and inject network/storage failures;
-3. define and test mid-stream restart/reconciliation semantics;
-4. expose the frozen candidate identity, requirement and telemetry to GDVA without producer-originated VERIFIED promotion;
-5. run independent behavioral validation, external architecture/code audit, and only then the mechanical acceptance join.
-
-## Promotion gate
-
-Do not mark `VERIFIED_CAPABILITY` / `ACCEPTED_VERIFIED_LIVE` until the exact frozen candidate has passed the live external-client path, real cloud replication failure envelope, required crash/restart behavior, and both independent GDVA branches. The current ceiling is `PRODUCTION_CANDIDATE_SELF_TEST_PASS`.
+Current producer ceiling: `PRODUCTION_CANDIDATE_V2_SELF_TEST_AND_CI_PASS`.
