@@ -73,6 +73,27 @@ capabilities:
     maturity: WRAPPER_CANDIDATE
     implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
     priority: P1
+  - id: CHATGPT_OFFICIAL_EXPORT_INGEST
+    class: ARCHIVE_CAPABILITY
+    maturity: OBSERVED
+    implementation: LOCAL_OFFICIAL_EXPORT_FILE_INGEST
+    source_route: SUPPORTED_CHATGPT_DATA_EXPORT_ONLY
+    reverse_private_endpoint_access: false
+    status: SYNTHETIC_CONVERSATION_GRAPH_TEST_PASS_REAL_EXPORT_PENDING
+    operation_card: operations/CHATGPT_CONVERSATION_ARCHIVE.md
+    implementation_path: tools/ingest_openai_export.py
+    high_capability_model_happy_path: MINIMAL_AFTER_EXPORT_FILE_AVAILABLE
+  - id: CHATGPT_FOREGROUND_TRANSCRIPT_MIRROR
+    class: ARCHIVE_CAPABILITY
+    maturity: OBSERVED
+    implementation: CURRENT_CONNECTED_PRIVATE_STORAGE_COMPOSITION
+    source_route: ACTIVE_RUNTIME_USER_VISIBLE_TEXT
+    provider_raw_graph_claim: forbidden
+    status: LIVE_CURRENT_CHAT_WRITE_READBACK_PASS_2026_09_03
+    operation_card: operations/CHATGPT_CONVERSATION_ARCHIVE.md
+    private_binding: ram6666666/ai-ops-private/bindings/CHATGPT_TRANSCRIPT_ARCHIVE.yaml
+    high_capability_model_happy_path: LOW_UNTIL_DETERMINISTIC_APPEND_WRAPPER_EXISTS
+    wrapper_target: CHAT_TRANSCRIPT_CHECKPOINT
 rules:
   claim_verified_capability_requires:
     - executable implementation/native single abstraction
