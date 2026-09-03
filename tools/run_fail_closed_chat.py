@@ -8,11 +8,11 @@ from pathlib import Path
 
 from fail_closed_chat_runtime_v2 import (
     DurableCommitter,
-    FailClosedChatHarness,
     JsonlFilesystemReplica,
     OpenAIResponsesAdapter,
     SQLiteDurableEventLog,
 )
+from fail_closed_stream_buffer import BufferedFailClosedChatHarness
 from github_contents_replica_sink import GitHubContentsReplicaSink
 from google_drive_replica_sink import GoogleDriveFileReplicaSink
 
@@ -49,6 +49,7 @@ def parse_args():
     p.add_argument("--request-id", default=None)
     p.add_argument("--model", default="gpt-5.6-sol")
     p.add_argument("--stream", action="store_true")
+    p.add_argument("--stream-frame-chars", type=int, default=512)
     p.add_argument("--mode", choices=["strict", "local-outbox"], default="strict")
     p.add_argument("--replica", choices=["filesystem", "github", "drive"], default="drive")
     p.add_argument("--replica-root")
@@ -74,15 +75,19 @@ def main() -> int:
         require_remote_ack=(args.mode == "strict"),
     )
     model = OpenAIResponsesAdapter(model=args.model)
-    harness = FailClosedChatHarness(committer, model)
+    harness = BufferedFailClosedChatHarness(
+        committer,
+        model,
+        frame_chars=args.stream_frame_chars,
+    )
 
     if args.stream:
-        for delta in harness.stream_exchange(
+        for frame in harness.stream_exchange(
             conversation_id=args.conversation_id,
             request_id=request_id,
             user_text=text,
         ):
-            sys.stdout.write(delta)
+            sys.stdout.write(frame)
             sys.stdout.flush()
         sys.stdout.write("\n")
         sys.stdout.flush()
