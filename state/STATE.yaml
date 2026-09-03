@@ -1,0 +1,37 @@
+schema_version: 1.0
+status: ACTIVE
+repository_role: DURABLE_OPERATIONAL_KNOWLEDGE_AND_CAPABILITY_LAYER
+canonical_scope:
+  - environment profiles
+  - reusable operation recipes
+  - failure/recovery knowledge
+  - cross-model capability differences
+  - capability maturity and implementation state
+  - efficiency/reliability telemetry
+learning_lanes:
+  PROACTIVE_LIBRARY:
+    purpose: curate mature common operations before repeated rediscovery
+    promotion_input: current native tool/skill/API contracts plus verified local probes when needed
+  WORK_DERIVED_LEARNING:
+    purpose: accumulate new knowledge from real work with the user
+    promotion_input: execution/readback evidence, failures, repairs, cost observations, cross-model differences
+maturity_model:
+  - OBSERVED
+  - REPEATED
+  - STABLE_PLAYBOOK
+  - WRAPPER_CANDIDATE
+  - VERIFIED_CAPABILITY
+  - DEPRECATED
+record_policy: NEW_INFORMATION_ONLY
+routine_stable_success_duplicate_logging: FORBIDDEN_BY_DEFAULT
+current_runtime_mirror: Google Drive runtime manual maintained by global control plane
+source_priority:
+  - current executable tool/schema contract
+  - verified capability implementation/test
+  - stable operation card with environment binding
+  - repeated empirical experience
+  - single observation
+stale_schema_action: REVALIDATE_AND_DEPRECATE_OLD_ROUTE
+secret_storage: FORBIDDEN
+authority_boundary: OPERATIONAL_ONLY_NO_PROJECT_OR_SCIENTIFIC_AUTHORITY
+initialization_status: BOOTSTRAPPING

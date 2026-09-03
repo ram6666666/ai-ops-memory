@@ -1,0 +1,85 @@
+schema_version: 1.0
+catalog_status: ACTIVE
+capabilities:
+  - id: DRIVE_TARGET_GROUNDING
+    class: OPERATION_RECIPE
+    maturity: STABLE_PLAYBOOK
+    implementation: CURRENT_NATIVE_CONNECTOR_COMPOSITION
+    high_capability_model_happy_path: MINIMAL
+  - id: DRIVE_MOVE_FILE
+    class: OPERATION_RECIPE
+    maturity: STABLE_PLAYBOOK
+    implementation: CURRENT_NATIVE_CONNECTOR_COMPOSITION
+    high_capability_model_happy_path: MINIMAL
+  - id: DRIVE_NATIVE_DOC_BASIC_EDIT
+    class: OPERATION_RECIPE
+    maturity: STABLE_PLAYBOOK
+    implementation: CURRENT_NATIVE_CONNECTOR_COMPOSITION
+    high_capability_model_happy_path: LOW_AFTER_TARGET_RESOLUTION
+  - id: DRIVE_BYTE_PRESERVING_TRANSFER
+    class: OPERATION_RECIPE
+    maturity: STABLE_PLAYBOOK
+    implementation: CURRENT_NATIVE_FILE_REFERENCE_STREAM_PRIMITIVES_WHEN_AVAILABLE
+    high_capability_model_happy_path: MINIMAL
+  - id: GITHUB_TEXT_FILE_UPDATE
+    class: OPERATION_RECIPE
+    maturity: STABLE_PLAYBOOK
+    implementation: CURRENT_FETCH_PLUS_SHA_GUARDED_UPDATE
+    high_capability_model_happy_path: LOW
+  - id: GITHUB_MULTI_FILE_LOGICAL_TRANSITION
+    class: OPERATION_RECIPE
+    maturity: STABLE_PLAYBOOK
+    implementation: CURRENT_GIT_DATA_PRIMITIVE_COMPOSITION
+    high_capability_model_happy_path: TOO_HIGH_DUE_TO_MULTIPLE_PRIMITIVES
+    wrapper_target: GITHUB_MULTI_FILE_STATE_COMMIT
+  - id: DRIVE_CHECKPOINT_COMMIT
+    class: COMPOUND_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    priority: P0
+    desired_contract: fixed target/version + payload + checkpoint metadata -> verified write/readback/state pointer -> structured receipt
+  - id: DRIVE_CREATE_IN_FOLDER_VERIFIED
+    class: COMPOUND_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    priority: P1
+  - id: GITHUB_MULTI_FILE_STATE_COMMIT
+    class: COMPOUND_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    priority: P0
+  - id: WORKER_RECEIPT_EMIT
+    class: CONTROL_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    priority: P0
+  - id: LEASE_TRANSITION
+    class: CONTROL_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    priority: P0
+  - id: STATE_TRANSITION_COMMIT
+    class: CONTROL_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    priority: P1
+  - id: PUBLISH_RELAY_VERIFIED
+    class: RELAY_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    priority: P1
+  - id: POLICY_FINGERPRINT_RECONCILE
+    class: CONTROL_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    priority: P1
+rules:
+  claim_verified_capability_requires:
+    - executable implementation/native single abstraction
+    - explicit input/output contract
+    - structured failure classes
+    - real execution evidence
+    - postcondition/readback verification
+  documentation_only_never_equals_verified_capability: true
+  recurrent_solved_failure_should_move_into_validator_retry_or_capability: true
+  current_schema_overrides_stored_call_shape: true
