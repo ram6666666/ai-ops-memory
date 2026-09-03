@@ -1,0 +1,89 @@
+schema_version: 1.0
+run_id: FAIL-CLOSED-CHAT-RUNTIME-CANDIDATE-20260903-01
+run_date: 2026-09-03
+status: SELF_TEST_PASS
+implementation_role: IMPLEMENTER_PRODUCER
+independent_acceptance: NOT_CLAIMED
+candidate:
+  implementation_path: tools/fail_closed_chat_runtime.py
+  test_path: tools/test_fail_closed_chat_runtime.py
+  critical_contract: local durable commit + optional mandatory replica ACK before every boundary crossing
+  strict_default: REMOTE_ACK_REQUIRED_WHEN_REPLICA_CONFIGURED
+  model_adapter: OpenAI Responses API
+  default_model: gpt-5.6-sol
+  streaming_rule: each output_text delta durable-committed and replica-ACKed before yield/render
+local_execution:
+  runtime: local_ephemeral_python_runtime
+  warnings_policy: ResourceWarning treated as error after connection-leak remediation
+  total: 12
+  passed: 12
+  failed: 0
+  compile_check: PASS
+ci_execution:
+  platform: GITHUB_ACTIONS
+  runner: ubuntu-latest
+  workflow: .github/workflows/fail_closed_chat_logger_ci.yml
+  run_id: 33765340011
+  head_sha: 2f3009b4a065dcd6067ee0be1168518d233b770e
+  status: completed
+  conclusion: success
+  current_openai_sdk_installed: true
+  responses_create_surface_smoke: PASS
+  live_openai_call: NOT_RUN_NO_CREDENTIAL
+cases:
+  - id: PC01
+    claim: strict non-stream user and assistant events require local commit plus remote ACK
+    result: PASS
+  - id: PC02
+    claim: remote user ACK failure blocks model invocation
+    result: PASS
+  - id: PC03
+    claim: remote assistant ACK failure blocks delivery
+    result: PASS
+  - id: PC04
+    claim: streamed delta is committed and ACKed before yield/render
+    result: PASS
+  - id: PC05
+    claim: streamed delta remote failure blocks that delta from render
+    result: PASS
+  - id: PC06
+    claim: local-authoritative optional policy can tolerate asynchronous replica failure
+    result: PASS
+  - id: PC07
+    claim: OpenAI Responses adapter matches current response.output_text and response.output_text.delta shape under controlled client double
+    result: PASS
+  - id: PC08
+    claim: fully committed replay is idempotent and does not duplicate replica events or model call
+    result: PASS
+  - id: PC09
+    claim: assistant local-commit plus remote-ACK failure can recover without reinvoking model
+    result: PASS
+  - id: PC10
+    claim: secondary filesystem replica is atomic and idempotent
+    result: PASS
+  - id: PC11
+    claim: 24 concurrent same-conversation local commits serialize into one valid monotonic hash chain
+    result: PASS
+  - id: PC12
+    claim: SQLite FULL synchronous committed event survives immediate process os._exit and verifies after reopen
+    result: PASS
+remediation_found_during_test:
+  - issue: SQLite context-manager usage did not close connections and emitted ResourceWarning
+    action: replaced affected connection scopes with explicit closing/close semantics
+    retest: 12_of_12_PASS_WITH_RESOURCEWARNING_AS_ERROR
+residual_limits:
+  - no live provider API call because no OPENAI_API_KEY is available in the execution environment
+  - no Google Drive/object-store API ReplicaSink implementation with real remote ACK yet
+  - filesystem replica proves second durable sink semantics but not independent cloud durability
+  - crash after provider generation but before assistant local commit can still cause provider reinvocation on retry; provider-call exactly-once is NOT_CLAIMED
+  - interrupted streaming resume/reconciliation across a mid-stream process crash is not yet fully implemented
+  - not integrated with OpenAI ChatGPT first-party web/app runtime
+  - independent GDVA behavioral validator verdict not yet obtained
+  - independent external architecture/code audit not yet obtained
+promotion_ceiling: PRODUCTION_CANDIDATE_SELF_TEST_PASS
+next_validation_targets:
+  - real OpenAI Responses API call through this boundary with credentialed external client
+  - real cloud ReplicaSink with synchronous ACK and fault injection
+  - mid-stream crash/resume semantics
+  - GDVA independent behavioral validation
+  - independent external implementation/code audit
