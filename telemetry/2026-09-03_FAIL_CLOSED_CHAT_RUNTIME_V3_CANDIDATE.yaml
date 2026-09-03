@@ -1,0 +1,82 @@
+schema_version: 1.0
+run_id: FAIL-CLOSED-CHAT-RUNTIME-V3-20260903-01
+run_date: 2026-09-03
+producer_state: SELF_TEST_PASS
+implementation_role: IMPLEMENTER_PRODUCER
+independent_acceptance: NOT_CLAIMED
+integrated_candidate_components:
+  core_runtime:
+    path: tools/fail_closed_chat_runtime_v2.py
+    blob_sha: 7744e523c20e839b560d4ebe25847357b9e0c9d6
+  bounded_streaming:
+    path: tools/fail_closed_stream_buffer.py
+    blob_sha: 082e66492d3035c8a0dda6c312ba202b7f0bd33e
+    test_path: tools/test_fail_closed_stream_buffer.py
+    test_blob_sha: 58c961ff25535137f944d53b048c46391687295e
+    default_frame_chars: 512
+  github_network_replica:
+    path: tools/github_contents_replica_sink.py
+    blob_sha: aa9ed4db567f150bd277315aed4319034f210780
+    live_synthetic_write_readback_cleanup: PASS
+  google_drive_replica:
+    path: tools/google_drive_replica_sink.py
+    blob_sha: 23bf9390eec319500428688668a35790479a3f4f
+    test_path: tools/test_google_drive_replica_sink.py
+    test_blob_sha: 1ca3a30558029111a2f827a4d37efcc483183904
+    controlled_tests: 4_of_4_PASS
+    live_oauth_provider_test: BLOCKED_NO_EXTERNAL_RUNTIME_OAUTH_TOKEN
+  runnable_cli:
+    path: tools/run_fail_closed_chat.py
+    blob_sha: 410b3c7e9db4f8ba09c7da6fa7ba7bd5bad6fda1
+    default_replica: drive
+    default_mode: strict
+    input_surface: stdin
+    credential_sources: ENVIRONMENT_ONLY
+ci:
+  platform: GITHUB_ACTIONS
+  run_id: 33767204435
+  job_id: 100688014105
+  head_sha: c95390b0779414994c65f3e9a703f3a8c4921b50
+  status: completed
+  conclusion: success
+  steps:
+    current_openai_sdk_install: SUCCESS
+    responses_create_retrieve_surface_smoke: SUCCESS
+    original_prototype_tests: SUCCESS
+    v1_tests: SUCCESS
+    v2_durable_outbox_tests: SUCCESS
+    bounded_frame_streaming_tests: SUCCESS
+    google_drive_replica_controlled_tests: SUCCESS
+    compile_all_candidate_surfaces: SUCCESS
+    runnable_cli_help_surface: SUCCESS
+    live_github_network_replica_write_readback_cleanup: SUCCESS
+verified_by_producer_self_test:
+  - local SQLite FULL-synchronous event durability
+  - sequence/hash-chain integrity
+  - event-id conflict fail-closed
+  - durable replication intent in same transaction as event
+  - restart-safe asynchronous replication retry
+  - strict replica ACK before provider invocation or output delivery
+  - output buffering that reduces remote write amplification while preserving write-before-render for every visible frame
+  - filesystem replica atomicity/idempotency
+  - real GitHub Contents API network PUT/GET ACK path on non-sensitive synthetic event
+  - Google Drive API sink create/idempotency/readback/md5 fail-closed logic under controlled provider doubles
+  - runnable external CLI assembly with Drive/GitHub/filesystem replica selection
+current_official_openai_api_grounding:
+  responses_create: CONFIRMED_CURRENT_2026_09_03
+  output_text: CONFIRMED_CURRENT_2026_09_03
+  response_output_text_delta: CONFIRMED_CURRENT_2026_09_03
+  responses_retrieve: CONFIRMED_CURRENT_2026_09_03
+  retrieve_starting_after_sequence_number: CONFIRMED_CURRENT_2026_09_03
+blocked_live_gates:
+  - credentialed OpenAI Responses provider call through the CLI
+  - credentialed Google Drive ReplicaSink network write/readback through the external CLI runtime
+  - mid-stream crash/resume reconciliation
+  - independent GDVA behavioral validation
+  - independent external implementation/code audit
+nonclaims:
+  - first-party ChatGPT web/app interception
+  - provider-call exactly-once if crash occurs after provider generation but before local assistant commit
+  - uninterrupted continuation after mid-stream process crash
+  - production readiness for private conversation data before real Drive/private-backend live test
+promotion_ceiling: INTEGRATED_V3_PRODUCER_SELF_TEST_AND_CI_PASS
