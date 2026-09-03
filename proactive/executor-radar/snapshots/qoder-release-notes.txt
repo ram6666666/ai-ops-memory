@@ -1,0 +1,209 @@
+Qoder Release Notes - Qoder
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Qoder
+home page
+English
+Search in Docs
+⌘K
+Download
+Download
+Qoder Series
+Qoder
+IDE
+JetBrains Plugin
+CLI
+Agent SDK
+Cloud Agents
+Mobile & Web
+QoderWake
+Enterprise
+Qoder Series
+Qoder Release Notes
+Website
+Forum
+Blog
+Product Overview
+What is Qoder
+Customer Cases
+Quick Start
+Quick Start
+Release Notes
+Qoder Release Notes
+IDE Release Notes
+JetBrains Plugin Release Notes
+Qoder CLI Release Notes
+Cloud Agents Release Notes
+QoderWork Release Notes
+QoderWake Release Notes
+Account
+Credits
+Pricing
+Billing
+Events
+September Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
+The New Qoder Is Here: Limited-Time Launch Benefits
+Qoder 1st Anniversary × Qwen3.8-Max Official Launch: Claim 800–2,000 Model Calls
+Cantus Model — Limited-Time Discount
+Qwen3.8-Max-Preview All-Day 90 Percent Off, Off-Peak Up to 98 Percent Off
+Ultimate for Free — Starter Pack + Booster Pack
+Ultimate — Limited-Time Discount
+Premium Model Discount Rates
+Release Notes
+Qoder Release Notes
+Copy page
+Release history for Qoder.
+Copy page
+This page lists the release history for Qoder, with the newest update first.
+​
+September 1, 2026
+Qoder 0.1.4
+Everyday Polish
+Improvements
+Windows updates now automatically clean up old version backups, freeing disk space.
+Bug Fixes
+Fixed the taskbar icon showing blank after a quick update on Windows.
+Fixed plugins being marked unresponsive after macOS wakes from sleep.
+​
+August 31, 2026
+Qoder 0.1.3
+Improvements
+Improved the reliability of installation and updates on Windows
+Improved streaming rendering and persistence performance in long sessions for smoother responses
+Reduced redundant refreshes triggered by plugin and MCP state changes, lowering CPU and memory usage
+The workspace file tree is now collapsed by default and remembers your preference
+Bug Fixes
+Fixed an issue where vision-capable custom models could not process image inputs
+Fixed an issue where structured context from attachments was lost when sending
+Fixed an issue where leftover terminated processes incorrectly blocked installation on Windows
+Fixed an issue where the main window still appeared after closing the login or onboarding window on first install
+​
+August 29, 2026
+Qoder 0.1.2
+Enterprise Controls and Reliability Improvements
+Features
+Added enterprise policy controls for extensions and MCP servers.
+Improvements
+Improved first-message and app startup performance.
+Improved initial data import with parallel processing and failure isolation.
+Added clearer extension installation errors and recovery guidance.
+Improved Knowledge Center authentication synchronization.
+Fixes
+Fixed message history overwriting current input and losing unsent drafts.
+Fixed overlapping messages after resizing panels and artifacts appearing in the wrong session.
+Fixed sidebar sorting and pinning with large numbers of sessions.
+Fixed Chinese SSH host names not being recognized and Remote SSH sessions disappearing after switching work modes.
+Fixed theme conflicts between windows using different work modes.
+Fixed Windows tray icon, first-login window, language switching, installation, and update issues.
+​
+August 27, 2026
+Qoder 0.1.1
+Everyday Polish
+Improvements
+Voice input
+: Added a quota-exhausted notice for live voice, so you always know your remaining allowance.
+Installation
+: The installer now displays product names and download links dynamically; Linux first-time installs skip onboarding.
+MCP connections
+: Improved stdio authorization lifecycle and retry handling for more reliable connections.
+Startup feedback
+: The startup error page now includes a direct feedback entry.
+Fixes
+Fixed duplicate login windows on first launch; auth calibration no longer blocks the main window.
+Fixed voice drafts rendering twice in the composer and hardware cleanup errors on exit.
+Fixed several Windows install/uninstall issues; installer copy now displays correctly.
+Fixed language switching and website links during first login.
+Fixed UI issues including usage label wrapping, workspace sidebar ordering, and identity card copy.
+Fixed a cold-start misdetection in the Windows runtime.
+​
+August 27, 2026
+Qoder 0.1.0
+Hello, World!
+New Qoder is here. Qoder is an agentic platform for everyone, powered by an Agentic Coding core. You bring the idea, and Qoder gets it done.
+Since Qoder IDE launched in August 2025, Qoder has grown to more than 6 million users worldwide and serves more than 100,000 businesses.
+Coding is becoming a universal capability. The people using software to solve problems are no longer limited to developers; they now include everyone who wants to turn an idea into reality. At the same time, human-agent collaboration is changing: work is shifting from codebases to agent tasks, and from hands-on production to delegation and review.
+People need a task-centric interface that lives on their machine and keeps work observable and open to intervention. New Qoder is our answer.
+What's New
+Frontier models and smart routing
+: Qoder brings together leading models without locking you into a single one. Choose the model that fits your task, or let the Auto routing engine balance quality, speed, and cost automatically.
+Harness for complex tasks
+: Qoder's Harness keeps planning, execution, verification, and self-correction in a continuous loop. For long-running and complex tasks, it retains context, adapts based on real results, and retries or rolls back when needed, while permission tiers and tool allowlists keep sensitive actions within clear boundaries.
+Works in real environments
+: With Browser Use and Computer Use, Qoder can operate websites and desktop apps as you would, so it can complete work in real environments rather than being limited to chat and codebases.
+An ecosystem that connects
+: With more than 70 plugins, 20,000 skills, and 40 connectors, Qoder connects to the systems where work happens: code repositories, documents and data sources, collaboration tools, databases, internal APIs, ticketing systems, and monitoring tools.
+Proactive by default
+: Qoder does more than respond to instructions. It proactively brings unresolved errors, changes without tests, inconsistent logic, task updates, and suggested next steps to your attention. You remain the decision-maker without having to remember everything yourself.
+This is just the beginning.
+Our direction is clear: fewer required interventions and more trustworthy results. As Coding becomes a universal capability, having a Coding Agent gives anyone the power to turn ideas into reality.
+We want that capability to belong to everyone.
+Previous
+IDE Release Notes
+Release history for IDE.
+Next
+Qoder
+Products & Capabilities
+Qoder
+Qoder IDE
+Qoder JetBrains Plugin
+Qoder CLI
+Qoder Mobile
+Qoder Cloud Agents
+Qoder Agent SDK
+QoderWake
+Qoder Security
+Qoder Voice
+Get Started
+Enterprise
+Price
+Download
+Resource
+Docs
+Blog
+FAQ
+Changelog
+Contact Us
+Terms of Service
+Privacy Policy
+Feedback
+Contact Sales
+Forum
+About Us
+© 2026 BRIGHT ZENITH PRIVATE LIMITED.
+Qoder
+home page
+en
+Qoder Series
+Website
+Forum
+Blog
+Product Overview
+What is Qoder
+Customer Cases
+Quick Start
+Quick Start
+Release Notes
+Qoder Release Notes
+IDE Release Notes
+JetBrains Plugin Release Notes
+Qoder CLI Release Notes
+Cloud Agents Release Notes
+QoderWork Release Notes
+QoderWake Release Notes
+Account
+Credits
+Pricing
+Billing
+Events
+September Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
+The New Qoder Is Here: Limited-Time Launch Benefits
+Qoder 1st Anniversary × Qwen3.8-Max Official Launch: Claim 800–2,000 Model Calls
+Cantus Model — Limited-Time Discount
+Qwen3.8-Max-Preview All-Day 90 Percent Off, Off-Peak Up to 98 Percent Off
+Ultimate for Free — Starter Pack + Booster Pack
+Ultimate — Limited-Time Discount
+Premium Model Discount Rates
+Assistant
