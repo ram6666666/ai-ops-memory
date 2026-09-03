@@ -1,0 +1,68 @@
+schema_version: 1.0
+candidate_id: FAIL_CLOSED_CHAT_BOUNDARY_LOGGER_V2_2026-09-03
+capability: FAIL_CLOSED_CHAT_BOUNDARY_LOGGER
+candidate_status: ACTIVE_FROZEN_PRODUCER_CANDIDATE
+producer_state: SELF_TEST_PASS
+producer_role: IMPLEMENTER_PRODUCER
+created_at: 2026-09-03T16:19:48+02:00
+independent_acceptance: NOT_CLAIMED
+supersedes: state/candidates/FAIL_CLOSED_CHAT_BOUNDARY_LOGGER_2026-09-03.yaml
+frozen_requirement:
+  path: operations/FAIL_CLOSED_CHAT_LOGGING.md
+  blob_sha: 39b6ec60f5d2bde55c4ecd2c97665840f669ceea
+  claim_scope: >-
+    For an external API client/personal harness, a user input may not reach provider invocation before its configured durability barrier. An assistant non-stream output or streamed text delta may not reach delivery/render before its configured durability barrier. In strict mode the barrier is an atomic FULL-synchronous SQLite event+replication-intent commit followed by replica ACK. In local-authoritative asynchronous mode, replica failure may not erase replication intent: the pending outbox must survive restart and remain retryable.
+implementation:
+  repository: ram6666666/ai-ops-memory
+  runtime_path: tools/fail_closed_chat_runtime_v2.py
+  runtime_blob_sha: 7744e523c20e839b560d4ebe25847357b9e0c9d6
+  test_path: tools/test_fail_closed_chat_runtime_v2.py
+  test_blob_sha: e48ad5c5ddf259bf65038d2a889ff7213c78cbd1
+  ci_workflow: .github/workflows/fail_closed_chat_logger_ci.yml
+  ci_run_id: 33766147148
+  ci_job_id: 100684412532
+  ci_head_sha: 45b9a65b8dd8d767521aca0b06b3e9913a8fa034
+  ci_conclusion: success
+telemetry:
+  path: telemetry/2026-09-03_FAIL_CLOSED_CHAT_RUNTIME_V2_SELF_TEST.yaml
+  local_tests: 11
+  local_passed: 11
+  local_failed: 0
+  github_ci_v2_test_step: SUCCESS
+  resource_warning_as_error: true
+runtime_scope:
+  supported_candidate_surface: EXTERNAL_API_CLIENT_OR_PERSONAL_HARNESS
+  openai_adapter: RESPONSES_API
+  streaming: WRITE_BEFORE_RENDER_OUTPUT_TEXT_DELTA
+  strict_replica_policy: LOCAL_ATOMIC_EVENT_PLUS_OUTBOX_COMMIT_THEN_REPLICA_ACK
+  asynchronous_replica_policy: DURABLE_PENDING_OUTBOX_PLUS_RESTART_RETRY
+  tested_secondary_replica: ATOMIC_FSYNC_FILESYSTEM
+  durable_replication_outbox: IMPLEMENTED_SELF_TEST_AND_CI_PASS
+blocked_live_dependencies:
+  - OPENAI_API_KEY_ABSENT_IN_CURRENT_EXECUTION_RUNTIME
+  - REAL_INDEPENDENT_CLOUD_REPLICA_SINK_NOT_IMPLEMENTED
+known_nonclaims:
+  - CHATGPT_FIRST_PARTY_WEB_APP_INTERCEPTION
+  - PROVIDER_CALL_EXACTLY_ONCE_ACROSS_CRASH_BEFORE_ASSISTANT_LOCAL_COMMIT
+  - MIDSTREAM_PROVIDER_RESUME_WITHOUT_DUPLICATE_OR_DIVERGENT_CONTINUATION
+  - LIVE_OPENAI_PROVIDER_CALL
+  - INDEPENDENT_BEHAVIORAL_VERDICT
+  - INDEPENDENT_EXTERNAL_CODE_AUDIT
+validation_entrypoints:
+  - cd tools && PYTHONWARNINGS=error::ResourceWarning python -m unittest -v test_fail_closed_chat_runtime_v2.py
+  - python -m py_compile tools/fail_closed_chat_runtime_v2.py tools/test_fail_closed_chat_runtime_v2.py
+observable_evidence:
+  - SQLite events table
+  - SQLite replication_outbox table
+  - SQLite replica_receipts table
+  - hash-chain verification
+  - filesystem replica event files
+  - GitHub Actions run 33766147148 job 100684412532
+  - telemetry/2026-09-03_FAIL_CLOSED_CHAT_RUNTIME_V2_SELF_TEST.yaml
+gdva_eligibility:
+  candidate_stable_for_intake: true
+  producer_verified_promotion_forbidden: true
+  behavioral_validation_requested: true
+  external_implementation_audit_requested: true
+  previous_candidate_generation_must_not_be_joined_with_v2_evidence: true
+  expected_join_ceiling_until_live_dependencies_resolved: PARTIAL_OR_BLOCKED
