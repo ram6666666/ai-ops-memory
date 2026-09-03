@@ -1,0 +1,39 @@
+schema_version: 1.0
+run_id: FAIL-CLOSED-CHAT-LOGGER-SELFTEST-20260903-01
+run_date: 2026-09-03
+status: SELF_TEST_PASS
+implementation_role: IMPLEMENTER_PRODUCER
+independent_acceptance: NOT_CLAIMED
+implementation_path: tools/fail_closed_chat_logger.py
+test_path: tools/test_fail_closed_chat_logger.py
+runtime: local_ephemeral_python_runtime
+backend_under_test: sqlite_wal_synchronous_full
+results:
+  total: 5
+  passed: 5
+  failed: 0
+cases:
+  - id: FC01
+    claim: user durable commit precedes model invocation and assistant durable commit precedes delivery
+    result: PASS
+  - id: FC02
+    claim: input durable-write failure blocks model invocation
+    result: PASS
+  - id: FC03
+    claim: output durable-write failure blocks delivery
+    result: PASS
+  - id: FC04
+    claim: restart continuity plus idempotent retry preserves one ordered event chain
+    result: PASS
+  - id: FC05
+    claim: post-hoc content mutation is detected by hash-chain verification
+    result: PASS
+residual_limits:
+  - not integrated with OpenAI ChatGPT first-party web/app runtime
+  - no live provider API call in this test
+  - no remote/cloud backend on synchronous critical path yet
+  - no streaming write-before-render implementation yet
+  - no independent behavioral validator verdict yet
+  - no independent external architecture/code audit yet
+promotion_ceiling: IMPLEMENTATION_PROTOTYPE_SELF_TEST_PASS
+next_validation_target: real external API/client integration with crash/storage/concurrency fault injection
