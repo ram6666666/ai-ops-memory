@@ -1,13 +1,18 @@
-schema_version: 1.0
+schema_version: 1.1
 candidate_id: FAIL_CLOSED_CHAT_BOUNDARY_LOGGER_2026-09-03
 capability: FAIL_CLOSED_CHAT_BOUNDARY_LOGGER
+candidate_status: SUPERSEDED
 producer_state: SELF_TEST_PASS
 producer_role: IMPLEMENTER_PRODUCER
 created_at: 2026-09-03T16:13:29+02:00
+superseded_at: 2026-09-03T16:19:48+02:00
+superseded_by: state/candidates/FAIL_CLOSED_CHAT_BOUNDARY_LOGGER_V2_2026-09-03.yaml
+supersession_reason: >-
+  V2 materially changes durability semantics by atomically persisting replication intent with each local event and adding restart-safe replication reconciliation. Any independent acceptance campaign for the active candidate must bind V2 rather than this identity.
 independent_acceptance: NOT_CLAIMED
 frozen_requirement:
   path: operations/FAIL_CLOSED_CHAT_LOGGING.md
-  blob_sha: c2af6451097684afbcecae13e486dbf9a0194054
+  historical_blob_sha: c2af6451097684afbcecae13e486dbf9a0194054
   claim_scope: >-
     In an external API client/personal harness, every user input must cross the configured durable commit barrier before provider invocation, and every assistant non-stream output or streamed text delta must cross the configured durable commit barrier before delivery/render. In strict mode the barrier includes local FULL-synchronous SQLite commit plus ReplicaSink ACK. Failure is fail-closed.
 implementation:
@@ -16,7 +21,6 @@ implementation:
   runtime_blob_sha: d8d5b62bcf7aa763dcc28dd20eb229c1286367b4
   test_path: tools/test_fail_closed_chat_runtime.py
   test_blob_sha: 4001597ea096bf6a4816a42f951a83484af54dff
-  ci_workflow: .github/workflows/fail_closed_chat_logger_ci.yml
   ci_run_id: 33765340011
   ci_head_sha: 2f3009b4a065dcd6067ee0be1168518d233b770e
   ci_conclusion: success
@@ -25,35 +29,7 @@ telemetry:
   local_tests: 12
   local_passed: 12
   local_failed: 0
-  resource_warning_as_error: true
-runtime_scope:
-  supported_candidate_surface: EXTERNAL_API_CLIENT_OR_PERSONAL_HARNESS
-  openai_adapter: RESPONSES_API
-  streaming: WRITE_BEFORE_RENDER_DELTA_GRANULARITY
-  strict_replica_policy: LOCAL_COMMIT_PLUS_REPLICA_ACK
-  tested_secondary_replica: ATOMIC_FSYNC_FILESYSTEM
-blocked_live_dependencies:
-  - OPENAI_API_KEY_ABSENT_IN_CURRENT_EXECUTION_RUNTIME
-  - GOOGLE_APPLICATION_CREDENTIALS_ABSENT_IN_CURRENT_EXECUTION_RUNTIME
-  - REAL_CLOUD_REPLICA_SINK_NOT_IMPLEMENTED
-known_nonclaims:
-  - CHATGPT_FIRST_PARTY_WEB_APP_INTERCEPTION
-  - PROVIDER_CALL_EXACTLY_ONCE_ACROSS_CRASH_BEFORE_ASSISTANT_LOCAL_COMMIT
-  - MIDSTREAM_PROVIDER_RESUME_WITHOUT_DUPLICATE_OR_DIVERGENT_CONTINUATION
-  - INDEPENDENT_BEHAVIORAL_VERDICT
-  - INDEPENDENT_EXTERNAL_CODE_AUDIT
-validation_entrypoints:
-  - cd tools && PYTHONWARNINGS=error::ResourceWarning python -m unittest -v test_fail_closed_chat_runtime.py
-  - python -m py_compile tools/fail_closed_chat_runtime.py tools/test_fail_closed_chat_runtime.py
-observable_evidence:
-  - local SQLite events and replica_receipts tables
-  - hash-chain verification
-  - filesystem replica event files
-  - GitHub Actions run 33765340011
-  - telemetry/2026-09-03_FAIL_CLOSED_CHAT_RUNTIME_CANDIDATE_SELF_TEST.yaml
 gdva_eligibility:
-  candidate_stable_for_intake: true
+  candidate_stable_for_new_intake: false
+  old_campaign_if_any: STALE_CAMPAIGN_NEW_GENERATION_REQUIRED
   producer_verified_promotion_forbidden: true
-  behavioral_validation_requested: true
-  external_implementation_audit_requested: true
-  expected_join_ceiling_until_live_dependencies_resolved: PARTIAL_OR_BLOCKED
