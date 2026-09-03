@@ -94,6 +94,22 @@ capabilities:
     private_binding: ram6666666/ai-ops-private/bindings/CHATGPT_TRANSCRIPT_ARCHIVE.yaml
     high_capability_model_happy_path: LOW_UNTIL_DETERMINISTIC_APPEND_WRAPPER_EXISTS
     wrapper_target: CHAT_TRANSCRIPT_CHECKPOINT
+  - id: FAIL_CLOSED_CHAT_BOUNDARY_LOGGER
+    class: HARNESS_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    implementation: EXECUTABLE_PYTHON_PROTOTYPE
+    priority: P0
+    status: IMPLEMENTATION_PROTOTYPE_SELF_TEST_PASS
+    operation_card: operations/FAIL_CLOSED_CHAT_LOGGING.md
+    implementation_path: tools/fail_closed_chat_logger.py
+    test_path: tools/test_fail_closed_chat_logger.py
+    evidence: telemetry/2026-09-03_FAIL_CLOSED_CHAT_LOGGER_SELF_TEST.yaml
+    critical_contract: durable user commit -> model call -> durable assistant commit -> delivery
+    current_backend: SQLITE_WAL_SYNCHRONOUS_FULL
+    current_scope: EXTERNAL_API_CLIENT_OR_PERSONAL_HARNESS_ONLY
+    chatgpt_first_party_runtime_integration: NOT_IMPLEMENTED
+    cloud_sync_critical_path: NOT_IMPLEMENTED
+    promotion_ceiling: IMPLEMENTATION_PROTOTYPE_SELF_TEST_PASS
 rules:
   claim_verified_capability_requires:
     - executable implementation/native single abstraction
