@@ -97,20 +97,26 @@ capabilities:
   - id: FAIL_CLOSED_CHAT_BOUNDARY_LOGGER
     class: HARNESS_CAPABILITY
     maturity: WRAPPER_CANDIDATE
-    implementation: EXECUTABLE_PYTHON_PRODUCTION_CANDIDATE
+    implementation: EXECUTABLE_PYTHON_PRODUCTION_CANDIDATE_V2
     priority: P0
-    status: PRODUCTION_CANDIDATE_SELF_TEST_PASS
+    status: PRODUCTION_CANDIDATE_V2_SELF_TEST_AND_CI_PASS
     operation_card: operations/FAIL_CLOSED_CHAT_LOGGING.md
-    implementation_path: tools/fail_closed_chat_runtime.py
-    provenance_prototype_path: tools/fail_closed_chat_logger.py
-    test_path: tools/test_fail_closed_chat_runtime.py
-    evidence: telemetry/2026-09-03_FAIL_CLOSED_CHAT_RUNTIME_CANDIDATE_SELF_TEST.yaml
-    critical_contract: local durable user commit + required replica ACK -> model call -> local durable assistant commit/chunk + required replica ACK -> delivery/render
+    active_candidate: state/candidates/FAIL_CLOSED_CHAT_BOUNDARY_LOGGER_V2_2026-09-03.yaml
+    superseded_candidate: state/candidates/FAIL_CLOSED_CHAT_BOUNDARY_LOGGER_2026-09-03.yaml
+    implementation_path: tools/fail_closed_chat_runtime_v2.py
+    implementation_blob_sha: 7744e523c20e839b560d4ebe25847357b9e0c9d6
+    test_path: tools/test_fail_closed_chat_runtime_v2.py
+    test_blob_sha: e48ad5c5ddf259bf65038d2a889ff7213c78cbd1
+    evidence: telemetry/2026-09-03_FAIL_CLOSED_CHAT_RUNTIME_V2_SELF_TEST.yaml
+    ci_run_id: 33766147148
+    critical_contract: atomic local event plus replication-intent commit -> strict replica ACK when required -> provider/delivery boundary
     local_backend: SQLITE_WAL_SYNCHRONOUS_FULL
     replica_contract: PLUGGABLE_REPLICA_SINK_WITH_PERSISTED_ACK_RECEIPT
+    durable_replication_outbox: IMPLEMENTED_SELF_TEST_AND_CI_PASS
+    asynchronous_replication_restart_retry: IMPLEMENTED_SELF_TEST_AND_CI_PASS
     tested_secondary_replica: ATOMIC_FSYNC_FILESYSTEM
-    streaming_write_before_render: IMPLEMENTED_SELF_TEST_PASS
-    openai_responses_adapter: IMPLEMENTED_SDK_SURFACE_AND_CONTROLLED_SHAPE_TEST_PASS
+    streaming_write_before_render: IMPLEMENTED_SELF_TEST_AND_CI_PASS
+    openai_responses_adapter: IMPLEMENTED_CURRENT_SDK_SURFACE_AND_CONTROLLED_SHAPE_TEST_PASS
     live_openai_provider_call: BLOCKED_NO_CREDENTIAL
     real_cloud_replica: NOT_IMPLEMENTED
     provider_call_exactly_once: NOT_CLAIMED
@@ -119,7 +125,7 @@ capabilities:
     chatgpt_first_party_runtime_integration: NOT_IMPLEMENTED
     independent_gdva_behavioral_validation: PENDING
     independent_external_code_audit: PENDING_BACKEND
-    promotion_ceiling: PRODUCTION_CANDIDATE_SELF_TEST_PASS
+    promotion_ceiling: PRODUCTION_CANDIDATE_V2_SELF_TEST_AND_CI_PASS
 rules:
   claim_verified_capability_requires:
     - executable implementation/native single abstraction
