@@ -33,7 +33,21 @@ def main() -> None:
         assert receipt.remote_receipt and receipt.remote_receipt.startswith("github:")
         assert log.remote_receipt(receipt.event) == receipt.remote_receipt
         assert log.verify_chain("SYNTHETIC-CI-REMOTE-REPLICA")
-        print("REMOTE_REPLICA_WRITE_READBACK_PASS")
+
+        path = sink._path(receipt.event)
+        remote = sink._get(path)
+        assert remote is not None and remote.get("sha")
+        sink._request(
+            "DELETE",
+            sink._url(path),
+            {
+                "message": "Clean synthetic fail-closed remote replica smoke artifact",
+                "sha": remote["sha"],
+                "branch": branch,
+            },
+        )
+        assert sink._get(path) is None
+        print("REMOTE_REPLICA_WRITE_READBACK_AND_CLEANUP_PASS")
         print(receipt.remote_receipt)
 
 
