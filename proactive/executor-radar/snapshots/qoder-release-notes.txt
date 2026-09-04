@@ -32,6 +32,7 @@ Customer Cases
 Quick Start
 Quick Start
 Release Notes
+Removal of the Lite model tier
 Qoder Release Notes
 IDE Release Notes
 JetBrains Plugin Release Notes
@@ -46,6 +47,7 @@ Pricing
 Billing
 Events
 Efficient Model Tier: Free for Paid Users
+Premium Model Discount Rates
 September Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
 Qoder 1st Anniversary × Qwen3.8-Max Official Launch: Claim 800–2,000 Model Calls
@@ -53,7 +55,6 @@ Cantus Model — Limited-Time Discount
 Qwen3.8-Max-Preview All-Day 90 Percent Off, Off-Peak Up to 98 Percent Off
 Ultimate for Free — Starter Pack + Booster Pack
 Ultimate — Limited-Time Discount
-Premium Model Discount Rates
 Release Notes
 Qoder Release Notes
 Copy page
@@ -166,27 +167,33 @@ IDE Release Notes
 Release history for IDE.
 Next
 Qoder
-Products & Capabilities
+Try Qoder now
 Qoder
 Mobile
+Integrating Qoder Agent
+Agent SDK
+Cloud Agents
+AI Employees
+QoderWake
+Terms
+Terms of Service
+Privacy Policy
+Other ways to use
 IDE
 JetBrains Plugin
 CLI
-Agent SDK
-Cloud Agents
-QoderWake
 Get Started
 Enterprise
 Price
 Download
 Resource
+Marketplace
+Activities
 Docs
 Blog
 FAQ
 Changelog
-Contact Us
-Terms of Service
-Privacy Policy
+Connect
 Feedback
 Contact Sales
 Forum
@@ -205,6 +212,7 @@ Customer Cases
 Quick Start
 Quick Start
 Release Notes
+Removal of the Lite model tier
 Qoder Release Notes
 IDE Release Notes
 JetBrains Plugin Release Notes
@@ -219,6 +227,7 @@ Pricing
 Billing
 Events
 Efficient Model Tier: Free for Paid Users
+Premium Model Discount Rates
 September Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
 Qoder 1st Anniversary × Qwen3.8-Max Official Launch: Claim 800–2,000 Model Calls
@@ -226,5 +235,4 @@ Cantus Model — Limited-Time Discount
 Qwen3.8-Max-Preview All-Day 90 Percent Off, Off-Peak Up to 98 Percent Off
 Ultimate for Free — Starter Pack + Booster Pack
 Ultimate — Limited-Time Discount
-Premium Model Discount Rates
 Assistant

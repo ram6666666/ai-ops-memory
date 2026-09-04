@@ -32,6 +32,7 @@ QoderWork 更新日志
 快速入门
 快速入门
 动态与公告
+「轻量」（Lite）模型档位下线通知
 Qoder 更新日志
 IDE 更新日志
 JetBrains 插件更新日志
@@ -46,6 +47,7 @@ Credits
 计费
 事件
 「经济」(Efficient) 模型档位开放免费使用
+高级模型特惠折扣
 9 月开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
 Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用
@@ -53,7 +55,6 @@ Cantus 模型限时优惠
 Qwen3.8-Max-Preview全天享受1折，错峰低至0.2折
 极致模型免费送 —— 极致尝鲜包 + 极致加量包
 极致模型限时优惠
-高级模型特惠折扣
 动态与公告
 QoderWork 更新日志
 复制页面
@@ -747,27 +748,33 @@ QoderWake 更新日志
 QoderWake 的版本更新记录。
 下一页
 Qoder
-产品及能力
+立即体验 Qoder
 Qoder
 移动端
+集成 Qoder Agent
+Agent SDK
+Cloud Agents
+AI 员工
+QoderWake
+条款
+服务条款
+隐私政策
+其他使用方式
 IDE
 JetBrains 插件
 CLI
-Agent SDK
-Cloud Agents
-QoderWake
 立即获取
 企业版
 价格
 下载
 资源
+能力市场
+活动
 文档
 博客
 常见问题
 更新日志
 联系我们
-服务条款
-隐私政策
 意见反馈
 联系销售
 论坛
@@ -786,6 +793,7 @@ Qoder 系列
 快速入门
 快速入门
 动态与公告
+「轻量」（Lite）模型档位下线通知
 Qoder 更新日志
 IDE 更新日志
 JetBrains 插件更新日志
@@ -800,6 +808,7 @@ Credits
 计费
 事件
 「经济」(Efficient) 模型档位开放免费使用
+高级模型特惠折扣
 9 月开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
 Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用
@@ -807,5 +816,4 @@ Cantus 模型限时优惠
 Qwen3.8-Max-Preview全天享受1折，错峰低至0.2折
 极致模型免费送 —— 极致尝鲜包 + 极致加量包
 极致模型限时优惠
-高级模型特惠折扣
 AI 智能专员
