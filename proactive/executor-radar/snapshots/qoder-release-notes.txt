@@ -62,6 +62,25 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+September 5, 2026
+Qoder 0.1.8
+Custom Base URLs for BYOK
+Features
+Custom BYOK endpoints
+: Personal plan BYOK now supports custom Base URLs for any OpenAI- or Anthropic-compatible model service.
+Improvements
+Workspace Search
+: You can now search for content directly within the Markdown preview.
+Installer
+: Better process detection and install recovery on Windows
+Extension Market
+: Smoother category switching and detail layout
+Fixes
+Fixed messages lost after repeated context compression
+Fixed MCP OAuth negotiation failure diagnostics
+Fixed Worktree init failure with no retry option
+Fixed voice input floating window position not preserved
+​
 September 3, 2026
 Qoder 0.1.6
 Everyday Polish
