@@ -122,7 +122,7 @@ Fixed an issue where structured context from attachments was lost when sending
 Fixed an issue where leftover terminated processes incorrectly blocked installation on Windows
 Fixed an issue where the main window still appeared after closing the login or onboarding window on first install
 ​
-August 29, 2026
+August 28, 2026
 Qoder 0.1.2
 Enterprise Controls and Reliability Improvements
 Features
