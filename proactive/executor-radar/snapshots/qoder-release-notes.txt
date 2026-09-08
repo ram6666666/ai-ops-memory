@@ -62,6 +62,27 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+September 7, 2026
+Qoder 0.2.1
+Mobile remote control is supported
+Features
+Mobile Remote Control
+: Once enabled, you can use your phone to create and run tasks on your computer. The phone and the computer share the same session, and renaming, deletion, task forking, and follow-up questions all sync in both directions.
+Session references via drag-and-drop
+: Drag a session into the chat input box to reference it.
+Improvements
+Multitasking performance
+: Lower memory usage and reduced messaging overhead when multiple tasks run concurrently.
+Visuals
+: Updated the empty-state illustration for workspace files.
+Conversation output
+: No longer collapsed by default; any setting you enabled manually is preserved.
+Fixes
+Fixed an issue where a failed registration of a historical session prevented the conversation from continuing.
+Fixed an issue where the last message briefly disappeared when reverting and resending.
+Fixed continuous flickering during session output.
+Fixed rendering issues with symbols and formulas in Markdown.
+​
 September 5, 2026
 Qoder 0.1.8
 Custom Base URLs for BYOK

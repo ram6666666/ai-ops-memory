@@ -11,15 +11,15 @@
     "kimi-work-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-09-07T14:14:38+00:00",
-      "sha256": "ddf832d39255e4bbdfd2d1187388439624f8a616af369d6018f956b03107a4ef",
+      "last_changed_at": "2026-09-08T12:51:59+00:00",
+      "sha256": "115477b3220c86f29c7ca03ffa33099f5256b18a9f3a02acc954f56a2c4a5378",
       "url": "https://www.kimi.ai/zh-hans/help/kimi-work/release-notes"
     },
     "qoder-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-09-07T14:14:38+00:00",
-      "sha256": "4b10f5b228cc53f2ff7fb99b4b6d1e55a257605618ac75ace7731bde213a0024",
+      "last_changed_at": "2026-09-08T12:51:59+00:00",
+      "sha256": "e00d70bb9a0a73519aeb4fbaf73295fd19b6dc497472542bdc7bd3b41ca103b9",
       "url": "https://docs.qoder.com/release-notes/qoder"
     },
     "qoderwork-release-notes": {
