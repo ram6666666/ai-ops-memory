@@ -4,22 +4,22 @@
     "claude-code-feed": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/plain; charset=utf-8",
-      "last_changed_at": "2026-09-09T12:57:45+00:00",
-      "sha256": "bc5b2e238ea8e521d64c8466ecbe313c07fc6e10c8808887d0f2d676184e4e65",
+      "last_changed_at": "2026-09-10T12:54:46+00:00",
+      "sha256": "0a6f3177da2980ffd9f8baa2a1cce7215f460ba6440f40c8af6f456b32976096",
       "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/feed.xml"
     },
     "kimi-work-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-09-09T12:57:45+00:00",
-      "sha256": "7191a4240e6f578c7d18c39ac6fba7e3a591026dcfe1c72f64342dcc62365782",
+      "last_changed_at": "2026-09-10T12:54:46+00:00",
+      "sha256": "a176c1f113d45e15b2dd754d34383a800ba80b61768d6f29b28d7e33a8ad2695",
       "url": "https://www.kimi.ai/zh-hans/help/kimi-work/release-notes"
     },
     "qoder-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-09-08T12:51:59+00:00",
-      "sha256": "e00d70bb9a0a73519aeb4fbaf73295fd19b6dc497472542bdc7bd3b41ca103b9",
+      "last_changed_at": "2026-09-10T12:54:46+00:00",
+      "sha256": "7e82f6512f8d120a8bdacd38715d44bad236d0dc761330653f4cf30cb4ef8907",
       "url": "https://docs.qoder.com/release-notes/qoder"
     },
     "qoderwork-release-notes": {

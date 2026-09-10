@@ -62,6 +62,33 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+September 10, 2026
+Qoder 0.2.3
+Everyday Polish
+Improvements
+Before Computer Use performs a visual operation such as a click, it now verifies that the screenshot is current and that the target window still matches, improving accuracy.
+Improved cancellation and timeout handling for Computer Use, so long-running operations respond more promptly.
+Fixes
+Fixed Computer Use possibly repeating the same operation while the result of that operation could not yet be confirmed.
+​
+September 9, 2026
+Qoder 0.2.2
+Network Proxy Support Added
+Features
+Network proxy
+: Added network proxy configuration, with connection testing. Changes take effect after a restart.
+Improvements
+Model selection
+: New sessions now reuse the model you last selected manually, based on your account and runtime environment.
+Goal mode
+: Added a maximum turn limit for Goal, and Goal timing is now paused when a session is stopped.
+Data import
+: Improved page grouping, retention of selected items, and task recovery logic.
+Fixes
+Improved automatic recovery from remote control errors, and fixed Managed SSH session failures in a VPC, BYOK model recognition on mobile, and cross-device sync issues.
+Fixed session issues including the inability to stop during task preparation, the model being overridden when interjecting, and cold sessions relying on a stale connection when switching models.
+Fixed startup failures on Windows that triggered automatic compatibility mode, corrupted rendering of small icons on macOS, and scrolling in the automation model list.
+​
 September 7, 2026
 Qoder 0.2.1
 Mobile remote control is supported

@@ -74,7 +74,7 @@ Kimi Work 产品介绍
 常见问题
 发布日志
 插件和技能
-Kimi WebBridge
+Kimi 浏览器扩展
 幻灯片
 文档与表格
 深度研究（Deep Research）
