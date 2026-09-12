@@ -62,6 +62,19 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+September 12, 2026
+Qoder 0.2.5
+Everyday Polish
+Improvements
+File opening: Choose whether to open files in the desktop app or in the system's associated app based on file type. Qoder remembers the opening method that was used successfully.
+Realtime voice: Improved connection stability to reduce unexpected disconnections.
+File review: Reduced CPU usage when multiple code diffs are expanded and the terminal is open at the same time.
+Creative achievements: Added Credits and activity data to the profile page, along with achievement stickers for creating on 7, 30, and 100 consecutive days.
+Fixes
+Fixed an issue where the built-in browser could not reuse website login sessions across tasks.
+Fixed issues where streaming replies did not keep scrolling automatically to the latest content and remained at older content after layout changes.
+Fixed issues with Chinese text input in Computer Use.
+​
 September 10, 2026
 Qoder 0.2.3
 Everyday Polish
