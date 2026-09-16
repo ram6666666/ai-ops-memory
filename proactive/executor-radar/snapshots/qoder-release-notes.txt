@@ -99,7 +99,7 @@ Improved automatic recovery from remote control errors, and fixed Managed SSH se
 Fixed session issues including the inability to stop during task preparation, the model being overridden when interjecting, and cold sessions relying on a stale connection when switching models.
 Fixed startup failures on Windows that triggered automatic compatibility mode, corrupted rendering of small icons on macOS, and scrolling in the automation model list.
 ​
-September 7, 2026
+September 8, 2026
 Qoder 0.2.1
 Mobile remote control is supported
 Features
@@ -201,7 +201,13 @@ Fixed Windows tray icon, first-login window, language switching, installation, a
 August 27, 2026
 Qoder 0.1.1
 Everyday Polish
+Features
+Added background bulk import for existing sessions during first launch.
+Added work role editing in Settings.
 Improvements
+Improved app startup performance and reliability.
+Added original and discounted usage multipliers to the model menu.
+Improved MCP reconnection and state synchronization.
 Voice input
 : Added a quota-exhausted notice for live voice, so you always know your remaining allowance.
 Installation
