@@ -32,6 +32,7 @@ Customer Cases
 Quick Start
 Quick Start
 Release Notes
+Qoder IDE Quest window retirement notice
 Removal of the Lite model tier
 Qoder Release Notes
 IDE Release Notes
@@ -46,8 +47,10 @@ Credits
 Pricing
 Billing
 Events
+Claim 100 Credits Every Day
+Qwen3.8-Flash: Free for a Limited Time
 SOTA Models — Limited-Time Free Experience
-Efficient Model Tier: Free for Paid Users
+Efficient Model Tier: Free for Paid Users for a Limited Time
 Premium Model Discount Rates
 September Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
@@ -58,6 +61,35 @@ Copy page
 Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
+​
+September 18, 2026
+Qoder 0.3.3
+Sites: Create and Publish Websites Through Conversation
+Features
+Site building
+: Choose from templates, create websites through conversation, and preview, publish, and manage sites in the desktop app.
+PPT creation and editing
+: Open PPTX files in your workspace directly in the desktop app, and edit and save them. Download the PPT plugin from Extensions > Plugin Marketplace for a better experience.
+Computer Use
+: Upgraded to Computer Use 2.0 for a smoother experience, with Linux support. Enable it in Settings > Computer Use to try it out.
+Achievement stickers
+: Added 7 achievement stickers that unlock progressively as you use Qoder. Explore and collect them.
+Reply annotations
+: When enabled in Settings > Experimental features, select text in an agent reply to add it to the input box, attach a comment, and reference the corresponding annotation in later replies.
+Improvements
+Voice input
+: Press and hold the mouse in the input box for voice input; when you release, the transcription stays in the input box so you can edit it before sending.
+Send shortcut
+: Choose in Settings whether Enter or Cmd/Ctrl+Enter sends messages.
+Remote Control
+: Automatically syncs local session history updated within the last 7 days, with improved incremental sync that reduces redundant transfers.
+Worktree
+: Improved start point list loading and creation readiness for large repositories, reducing load or creation failures when there are many local changes.
+Fixes
+Fixed an issue where Remote Control could not restore its connection after an upgrade, and where old messages could be executed again when reconnecting.
+Fixed Side Chat not correctly inheriting the source session context in its first reply.
+Fixed replies possibly not appearing after sending a message during session compaction.
+Fixed the pinned taskbar entry possibly opening the old version after a Windows update.
 ​
 September 12, 2026
 Qoder 0.2.5
@@ -295,6 +327,7 @@ Customer Cases
 Quick Start
 Quick Start
 Release Notes
+Qoder IDE Quest window retirement notice
 Removal of the Lite model tier
 Qoder Release Notes
 IDE Release Notes
@@ -309,8 +342,10 @@ Credits
 Pricing
 Billing
 Events
+Claim 100 Credits Every Day
+Qwen3.8-Flash: Free for a Limited Time
 SOTA Models — Limited-Time Free Experience
-Efficient Model Tier: Free for Paid Users
+Efficient Model Tier: Free for Paid Users for a Limited Time
 Premium Model Discount Rates
 September Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits

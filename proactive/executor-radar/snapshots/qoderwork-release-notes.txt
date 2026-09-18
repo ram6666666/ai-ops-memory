@@ -1,3 +1,4 @@
+QoderWork 更新日志 - Qoder
 Documentation Index
 Fetch the complete documentation index at:
 /llms.txt
@@ -31,6 +32,7 @@ QoderWork 更新日志
 快速入门
 快速入门
 动态与公告
+Qoder IDE「Quest」视窗下线通知
 「轻量」（Lite）模型档位下线通知
 Qoder 更新日志
 IDE 更新日志
@@ -45,8 +47,10 @@ Credits
 价格
 计费
 事件
+每日领取 100 Credits
+Qwen3.8-Flash 限时免费使用
 SOTA 模型限时免费体验
-「经济」(Efficient) 模型档位开放免费使用
+「经济」(Efficient) 模型档位限时免费
 高级模型特惠折扣
 9 月开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
@@ -789,6 +793,7 @@ Qoder 系列
 快速入门
 快速入门
 动态与公告
+Qoder IDE「Quest」视窗下线通知
 「轻量」（Lite）模型档位下线通知
 Qoder 更新日志
 IDE 更新日志
@@ -803,11 +808,12 @@ Credits
 价格
 计费
 事件
+每日领取 100 Credits
+Qwen3.8-Flash 限时免费使用
 SOTA 模型限时免费体验
-「经济」(Efficient) 模型档位开放免费使用
+「经济」(Efficient) 模型档位限时免费
 高级模型特惠折扣
 9 月开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
 Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用
 AI 智能专员
-QoderWork 更新日志 - Qoder
