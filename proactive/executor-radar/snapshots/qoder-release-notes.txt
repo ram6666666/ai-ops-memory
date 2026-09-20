@@ -32,6 +32,7 @@ Customer Cases
 Quick Start
 Quick Start
 Release Notes
+Qoder Model Usage Reference Factor Adjustment Notice
 Qoder IDE Quest window retirement notice
 Removal of the Lite model tier
 Qoder Release Notes
@@ -89,7 +90,6 @@ Fixes
 Fixed an issue where Remote Control could not restore its connection after an upgrade, and where old messages could be executed again when reconnecting.
 Fixed Side Chat not correctly inheriting the source session context in its first reply.
 Fixed replies possibly not appearing after sending a message during session compaction.
-Fixed the pinned taskbar entry possibly opening the old version after a Windows update.
 ​
 September 12, 2026
 Qoder 0.2.5
@@ -327,6 +327,7 @@ Customer Cases
 Quick Start
 Quick Start
 Release Notes
+Qoder Model Usage Reference Factor Adjustment Notice
 Qoder IDE Quest window retirement notice
 Removal of the Lite model tier
 Qoder Release Notes

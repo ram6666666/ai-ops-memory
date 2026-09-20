@@ -1,76 +1,30 @@
-产品
+Kimi Work 发布日志 - Kimi 帮助中心
 产品
 产品
 Kimi
+一站式 AI Agent 工作空间
 Kimi Work
+重新定义知识工作者的 AI 桌面 Agent
 Kimi Code
+专为终端与 IDE 打造的 AI 编程 Agent
 Kimi 浏览器扩展
+专为 AI Agent 设计的浏览器插件
 Kimi 开放平台
-下载
-全部产品
-→
+接入最新 Kimi 大模型能力
 功能
-网站
-AI 建站工具
+功能
 PPT
 AI 演示文稿生成工具
-设计
-AI 设计生成器
-文档
-AI 文档 Agent
-表格
-AI 表格 Agent
-深度研究
-AI 研究 Agent
-集群
-多智能体系统
-全部功能
-→
-模型
-Kimi K3
-新
-Kimi K2.7 Code
-Kimi K2.6
-Kimi K2.5
-全部模型
-→
-使用场景
-使用场景
-精选使用场景
-搭建 MVP 网站
-创建作品集网站
-搭建博客网站
-开展学术研究
-开展市场调研
-制作简历
-制作宣传册
-全部使用场景
-→
-精选工具
-AI 落地页生成器
-图片生成网站
-AI 文档生成器
-PDF 转 PPT 工具
-PDF 翻译器
-AI Python 代码生成器
-AI C++ 代码生成器
-全部 AI 能力
-→
-案例展示
 网站
-Agent 集群
-深度研究
-PPT
+AI 网站搭建工具
+Deep Research
+获得全面且多格式的研究报告
 表格
+生成 Excel 公式、数据透视表和图表
 文档
-设计
-全部案例
-→
-企业服务
-企业服务
-Kimi 企业版
-企业版定价
-联系销售
+创建、转换和审阅文档
+Kimi Claw
+一键部署7×24小时运行的 AI Agent
 研究
 研究
 Kimi K3
@@ -82,34 +36,31 @@ Kimi K2.5
 Kimi Vendor Verifier
 Kimi K2 Thinking
 Kimi K2
-全部研究
-→
 资源
 资源
-Academy
-Kimi Work 101
-Kimi Code 101
-Kimi Slides
-全部教程
-→
-文章
-AI Agent 详解
-多智能体系统
+Kimi Code 介绍
 并行智能体
-什么是 Vibe Coding
+多智能体
+Hermes Agent 概览
+Hermes API 集成
+OpenClaw SaaS
+如何在 Mac 上安装 OpenClaw
+Excel AI 工具
+Vibe Coding 指南
 如何进行 Vibe Coding
-搭建落地页
-制作海报
-将 PNG 转换为 PowerPoint
-如何使用 VLOOKUP
-撰写商业提案
-全部文章
-→
-帮助中心
-帮助中心
+如何从零开始搭建网站
 定价
 定价
-在线体验 Kimi
+帮助中心
+帮助中心
+模型
+模型
+Kimi K3
+Kimi K2.7 Code
+Kimi K2.6
+Kimi K2.5
+登录
+体验 Kimi
 入门指南
 功能
 Agent 模式
@@ -334,77 +285,35 @@ Windows 端安装支持自选安装位置
 3.1.8（2026-08-11）
 3.1.7（2026-08-05）
 3.1.6（2026-07-29）
-跟随系统
 产品
 Kimi
 Kimi Work
 Kimi Code
 Kimi 浏览器扩展
 Kimi 开放平台
-下载
-全部产品
 定价
-个人版
-商业版
-API
-企业服务
-概览
-联系销售
+下载
 功能
-网站
-设计
-PPT
-文档
-表格
-深度研究
+AI Agent
 Agent 集群
-Kimi Claw
-全部功能
-研究
-Kimi K3 tech blog
-Kimi K2.6 tech blog
-Kimi K2.5 tech blog
-PerceptionBench
-Agent Swarm
-WorldVQA
-全部研究
-使用场景
-搭建 MVP 网站
-创建作品集网站
-搭建博客网站
-开展学术研究
-制作宣传册
-案例展示
-全部使用场景
-精选工具
-AI 落地页生成器
-图片生成网站
-AI 文档生成器
-PDF 转 PPT 工具
-PDF 翻译器
-AI Python 代码生成器
-AI C++ 代码生成器
-全部 AI 能力
-资源
-帮助中心
-AI Agent 详解
-多智能体系统
-什么是 Vibe Coding
-搭建落地页
-制作海报
-全部文章
-模型
-Kimi K3
-Kimi K2.7 Code
-Kimi K2.6
-Kimi K2.5
-全部模型
+AI 建站
+AI 文档
+AI PPT
+AI 表格
+深度研究
+AI能力
+AI Python 生成工具
+AI C++ 生成工具
+AI HTML 生成工具
+AI Java 生成工具
+AI JS 生成工具
+AI Rust 生成工具
+AI 落地页生成工具
 公司
 关于我们
 Moonshot AI
 KIMI 品牌指南
-招聘
+媒体联络
 服务条款
 隐私政策
 简体中文
-Kimi Work 发布日志 - Kimi 帮助中心
