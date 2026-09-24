@@ -8,10 +8,9 @@ Kimi 浏览器扩展
 Kimi 开放平台
 下载
 全部产品
-→
 功能
-网站
-AI 建站工具
+构建应用
+AI 应用与网站生成器
 PPT
 AI 演示文稿生成工具
 文档
@@ -21,7 +20,6 @@ AI 表格 Agent
 深度研究
 AI 研究 Agent
 全部功能
-→
 模型
 Kimi K3
 新
@@ -29,7 +27,6 @@ Kimi K2.7 Code
 Kimi K2.6
 Kimi K2.5
 全部模型
-→
 使用场景
 使用场景
 精选使用场景
@@ -41,7 +38,6 @@ Kimi K2.5
 制作简历
 制作宣传册
 全部使用场景
-→
 精选工具
 AI 落地页生成器
 图片生成网站
@@ -51,7 +47,6 @@ PDF 翻译器
 AI Python 代码生成器
 AI C++ 代码生成器
 全部 AI 能力
-→
 案例展示
 网站
 Agent 集群
@@ -61,7 +56,6 @@ PPT
 文档
 设计
 全部案例
-→
 企业服务
 企业服务
 Kimi 企业版
@@ -79,21 +73,17 @@ Kimi Vendor Verifier
 Kimi K2 Thinking
 Kimi K2
 全部研究
-→
 资源
 资源
+Articles
 AI Agent 详解
 多智能体系统
 并行智能体
 什么是 Vibe Coding
-如何进行 Vibe Coding
 搭建落地页
 制作海报
-将 PNG 转换为 PowerPoint
-如何使用 VLOOKUP
 撰写商业提案
 全部文章
-→
 帮助中心
 帮助中心
 定价
@@ -119,7 +109,7 @@ Kimi 浏览器扩展
 幻灯片
 文档与表格
 深度研究（Deep Research）
-网页
+构建应用
 会员
 Kimi Code
 Kimi API 与企业合作
