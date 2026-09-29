@@ -5,28 +5,23 @@ Kimi
 Kimi Work
 Kimi Code
 Kimi 浏览器扩展
-Kimi 开放平台
 下载
 全部产品
 功能
 构建应用
-AI 应用与网站生成器
 PPT
-AI 演示文稿生成工具
 文档
-AI 文档 Agent
 表格
-AI 表格 Agent
 深度研究
-AI 研究 Agent
 全部功能
 模型
 Kimi K3
-新
 Kimi K2.7 Code
 Kimi K2.6
 Kimi K2.5
 全部模型
+API
+API
 使用场景
 使用场景
 精选使用场景
@@ -75,6 +70,9 @@ Kimi K2
 全部研究
 资源
 资源
+支持与文档
+帮助中心
+Kimi Code 文档
 Articles
 AI Agent 详解
 多智能体系统
@@ -84,8 +82,6 @@ AI Agent 详解
 制作海报
 撰写商业提案
 全部文章
-帮助中心
-帮助中心
 定价
 定价
 下载
@@ -380,6 +376,9 @@ WorldVQA
 制作宣传册
 案例展示
 全部使用场景
+支持与文档
+帮助中心
+Kimi Code 文档
 精选工具
 AI 落地页生成器
 图片生成网站
