@@ -4,8 +4,8 @@
     "claude-code-feed": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/plain; charset=utf-8",
-      "last_changed_at": "2026-10-02T14:44:15+00:00",
-      "sha256": "0a76fc0efdc8b1605771766687659891d757e22f60e768e84b19e4d41bc330c1",
+      "last_changed_at": "2026-10-03T13:22:49+00:00",
+      "sha256": "902b178bff5ab0ce55db6ea7788363a3fab3f75172bc6a72078cabbe7f5837f3",
       "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/feed.xml"
     },
     "kimi-work-release-notes": {
