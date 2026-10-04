@@ -65,12 +65,27 @@ Logical multi-file state transitions still expose multiple Git Data calls. Prior
 
 ChatGPT, Work, Claude, Codex and local tools must not be assumed to expose identical schemas, provider file references, permissions or tool families. Reuse the semantic operation card, then bind it to the actual runtime capability. Current schema beats remembered syntax.
 
+Operation card: `operations/CROSS_RUNTIME_HANDOFF.md`.
+
+### Claude web / connector / container split
+
+Observation maturity: `OBSERVED_LIMITATION`, not a universal statement about all Claude sessions. Record the exact surface, session and configuration for every serious dispatch.
+
+- A Drive connector can expose metadata or base64 to model context while the local computation container has no route to those bytes. Local hashing, ZIP extraction or PDF rendering tools do not repair that missing bridge.
+- A small text checkpoint write/readback does not demonstrate a multi-megabyte binary transfer or generated-binary upload.
+- Browser connection and actual image/page viewing are separate capabilities from extracted text.
+- Direct GitHub availability, readable canonical control relay, source text, raw binary, visual pages, text output and binary output each need their own tested route.
+
+The sender must retrieve observed evidence, run a separately bounded probe bootstrap when necessary, and compile all required input/output routes before serious dispatch. Unknown, stale, mismatched or negative required capability means `BLOCKED_PRE_DISPATCH`. A successful sender read is not receiver access evidence.
+
+The executable compiler, relay and dispatch-boundary components live in `ram6666666/ai-`; their current operational status is `IMPLEMENTED_SELF_TESTED_COMPONENT`. Real receiver-provider qualification remains pending until the exact runtime's fresh receipts pass. This profile does not claim an installed platform-wide hook, a deployed remote scheduler or live Claude readiness.
+
 ## Future environment profiles
 
 Add dedicated profiles as actual work or proactive curation justifies them:
 
 - Work controller/executor
-- Claude
+- additional Claude surfaces after exact runtime characterization
 - Codex
 - local Windows/Linux research filesystem
 - Git CLI/local repositories

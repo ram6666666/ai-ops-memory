@@ -66,8 +66,44 @@ capabilities:
   - id: PUBLISH_RELAY_VERIFIED
     class: RELAY_CAPABILITY
     maturity: WRAPPER_CANDIDATE
-    implementation: NOT_IMPLEMENTED_AS_SINGLE_CALL
+    implementation: PROVIDER_ADAPTER_COMPOSITION_WITH_EXACT_BYTE_READBACK
+    status: IMPLEMENTED_SELF_TESTED_COMPONENT
+    operation_card: operations/CROSS_RUNTIME_HANDOFF.md
+    implementation_repository: ram6666666/ai-
+    implementation_path: runtime/control-kernel/cross_runtime_relay.py
+    entrypoint: publish_verified
+    receiver_readiness_claim: forbidden_from_sender_readback_alone
+    provider_claude_real_probe: PENDING
     priority: P1
+  - id: CROSS_RUNTIME_HANDOFF_COMPILE
+    class: CONTROL_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    status: IMPLEMENTED_SELF_TESTED_COMPONENT
+    implementation: DETERMINISTIC_REQUIREMENT_PROFILE_PROBE_SAT_GATE
+    implementation_repository: ram6666666/ai-
+    implementation_path: runtime/control-kernel/cross_runtime_handoff.py
+    entrypoint: compile_handoff
+    schema_path: global/CROSS_RUNTIME_HANDOFF_SCHEMA_V1.json
+    operation_card: operations/CROSS_RUNTIME_HANDOFF.md
+    provider_claude_real_probe: PENDING
+    provider_attestation: NOT_IMPLEMENTED
+    fail_closed_status: BLOCKED_PRE_DISPATCH
+    high_capability_model_happy_path: REQUIREMENT_ADMISSION_AND_EXCEPTION_REVIEW
+    priority: P0
+  - id: CROSS_RUNTIME_GUARDED_DISPATCH
+    class: CONTROL_CAPABILITY
+    maturity: WRAPPER_CANDIDATE
+    status: IMPLEMENTED_SELF_TESTED_COMPONENT
+    implementation: RECOMPILE_COMPARE_PUBLISH_EXACT_READBACK
+    implementation_repository: ram6666666/ai-
+    implementation_path: runtime/control-kernel/cross_runtime_dispatch.py
+    entrypoint: dispatch
+    operation_card: operations/CROSS_RUNTIME_HANDOFF.md
+    bundled_transport: LOCAL_FILE_MAILBOX
+    provider_adapter_deployment: MUST_BE_VERIFIED_SEPARATELY
+    platform_unavoidable_hook: NOT_CLAIMED
+    provider_claude_real_probe: PENDING
+    priority: P0
   - id: POLICY_FINGERPRINT_RECONCILE
     class: CONTROL_CAPABILITY
     maturity: WRAPPER_CANDIDATE
