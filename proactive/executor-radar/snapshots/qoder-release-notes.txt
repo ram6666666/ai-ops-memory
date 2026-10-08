@@ -63,6 +63,12 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+September 26, 2026
+Qoder 0.4.3
+Everyday Polish
+Improvements
+Improved the hook mechanism for Enterprise usage analytics, making statistics more accurate.
+​
 September 24, 2026
 Qoder 0.4.2
 Everyday Polish
