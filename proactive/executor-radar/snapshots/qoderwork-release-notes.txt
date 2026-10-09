@@ -31,18 +31,19 @@ QoderWork 更新日志
 客户案例
 快速入门
 快速入门
-动态与公告
-Qoder 模型用量参考系数调整通知
-Qoder IDE「Quest」视窗下线通知
-「轻量」（Lite）模型档位下线通知
+更新日志
 Qoder 更新日志
 IDE 更新日志
 JetBrains 插件更新日志
 Qoder CLI 更新日志
-Agent SDK 更新日志
+Qoder Agent SDK 更新日志
 Cloud Agents 更新日志
-QoderWork 更新日志
 QoderWake 更新日志
+QoderWork 更新日志
+产品公告
+Qoder 模型用量参考系数调整通知
+Qoder IDE「Quest」视窗下线通知
+「轻量」（Lite）模型档位下线通知
 账户
 Credits
 价格
@@ -56,7 +57,7 @@ SOTA 模型限时免费体验
 限时：开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
 Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用
-动态与公告
+更新日志
 QoderWork 更新日志
 复制页面
 QoderWork 的版本更新记录。
@@ -745,8 +746,7 @@ QoderWork 0.0.26
 本地安全运行：我在你的设备本地运行，未经你的授权不会访问任何文件。你的数据始终在你手中，安全可控。
 我能做的远不止这些——从竞品调研报告的自动化生成、旅行行程的全套规划，到学术论文的端到端研究辅助，只要你能描述出来，我就能帮你搞定。 当前版本支持 macOS，Windows 正在路上。使用你的 Qoder 账号登录即可，Credits 额度通用。 让我们一起探索更高效的工作方式，开启这段令人振奋的 AI 协作之旅吧！
 上一页
-QoderWake 更新日志
-QoderWake 的版本更新记录。
+Qoder 模型用量参考系数调整通知
 下一页
 Qoder
 立即体验 Qoder
@@ -793,18 +793,19 @@ Qoder 系列
 客户案例
 快速入门
 快速入门
-动态与公告
-Qoder 模型用量参考系数调整通知
-Qoder IDE「Quest」视窗下线通知
-「轻量」（Lite）模型档位下线通知
+更新日志
 Qoder 更新日志
 IDE 更新日志
 JetBrains 插件更新日志
 Qoder CLI 更新日志
-Agent SDK 更新日志
+Qoder Agent SDK 更新日志
 Cloud Agents 更新日志
-QoderWork 更新日志
 QoderWake 更新日志
+QoderWork 更新日志
+产品公告
+Qoder 模型用量参考系数调整通知
+Qoder IDE「Quest」视窗下线通知
+「轻量」（Lite）模型档位下线通知
 账户
 Credits
 价格
