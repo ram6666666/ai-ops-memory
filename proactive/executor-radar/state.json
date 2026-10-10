@@ -4,15 +4,15 @@
     "claude-code-feed": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/plain; charset=utf-8",
-      "last_changed_at": "2026-10-09T15:17:49+00:00",
-      "sha256": "db853bd277164bf66441ce2df92aba7c05b61bf71d87bdae795b8ee580dfff58",
+      "last_changed_at": "2026-10-10T14:27:40+00:00",
+      "sha256": "d1be02e92d1321d85198489730bc14e45820896d3325fa04eb51b1de8b16fbda",
       "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/feed.xml"
     },
     "kimi-work-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-10-09T15:17:49+00:00",
-      "sha256": "b61ef13dd9fee61a8c09672690fa18e6cea4a75218701f27202228efd35e324e",
+      "last_changed_at": "2026-10-10T14:27:40+00:00",
+      "sha256": "4a45d8e44e65e426383ff77651bc3d0e4f49f79232a758788f7784712175eebc",
       "url": "https://www.kimi.ai/zh-hans/help/kimi-work/release-notes"
     },
     "openai-chatgpt-release-notes": {
@@ -32,15 +32,15 @@
     "qoder-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-10-09T15:17:49+00:00",
-      "sha256": "04e5fd800cfece05228a85d312c3b17c182903b7e80e145e77325a5979891829",
+      "last_changed_at": "2026-10-10T14:27:40+00:00",
+      "sha256": "85277110b5973c841a05c7bccfd54324cb11143f0e6b563b3a5dc932373649dc",
       "url": "https://docs.qoder.com/release-notes/qoder"
     },
     "qoderwork-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-10-09T15:17:49+00:00",
-      "sha256": "e2e3b52e3c970853971df346e9e6166d7ffa2b40194e73a8974c35d82d3f395a",
+      "last_changed_at": "2026-10-10T14:27:40+00:00",
+      "sha256": "7d1fdc84dab2145fbbddeccc893fe08673385a176ec4fdf7c28cd7d4c09f6d81",
       "url": "https://docs.qoder.com/zh/release-notes/qoderwork"
     }
   }

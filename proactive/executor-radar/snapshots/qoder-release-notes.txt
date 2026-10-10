@@ -41,6 +41,7 @@ Cloud Agents Release Notes
 QoderWake Release Notes
 QoderWork Release Notes
 Product Announcements
+Qoder Mode Upgrade: Performance Becomes Fast
 Qoder Model Usage Reference Factor Adjustment Notice
 Qoder IDE Quest window retirement notice
 Removal of the Lite model tier
@@ -378,6 +379,7 @@ Cloud Agents Release Notes
 QoderWake Release Notes
 QoderWork Release Notes
 Product Announcements
+Qoder Mode Upgrade: Performance Becomes Fast
 Qoder Model Usage Reference Factor Adjustment Notice
 Qoder IDE Quest window retirement notice
 Removal of the Lite model tier

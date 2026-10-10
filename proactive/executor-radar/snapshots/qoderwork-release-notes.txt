@@ -41,6 +41,7 @@ Cloud Agents 更新日志
 QoderWake 更新日志
 QoderWork 更新日志
 产品公告
+Qoder 模式升级：原Performance升级为Fast模式
 Qoder 模型用量参考系数调整通知
 Qoder IDE「Quest」视窗下线通知
 「轻量」（Lite）模型档位下线通知
@@ -746,7 +747,7 @@ QoderWork 0.0.26
 本地安全运行：我在你的设备本地运行，未经你的授权不会访问任何文件。你的数据始终在你手中，安全可控。
 我能做的远不止这些——从竞品调研报告的自动化生成、旅行行程的全套规划，到学术论文的端到端研究辅助，只要你能描述出来，我就能帮你搞定。 当前版本支持 macOS，Windows 正在路上。使用你的 Qoder 账号登录即可，Credits 额度通用。 让我们一起探索更高效的工作方式，开启这段令人振奋的 AI 协作之旅吧！
 上一页
-Qoder 模型用量参考系数调整通知
+Qoder 模式升级：原Performance升级为Fast模式
 下一页
 Qoder
 立即体验 Qoder
@@ -803,6 +804,7 @@ Cloud Agents 更新日志
 QoderWake 更新日志
 QoderWork 更新日志
 产品公告
+Qoder 模式升级：原Performance升级为Fast模式
 Qoder 模型用量参考系数调整通知
 Qoder IDE「Quest」视窗下线通知
 「轻量」（Lite）模型档位下线通知
