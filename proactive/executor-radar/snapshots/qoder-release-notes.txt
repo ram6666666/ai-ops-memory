@@ -65,6 +65,15 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+October 10, 2026
+Qoder 0.4.4
+Fast Models: Faster Responses, Less Waiting
+Features
+Fast models
+: Get faster responses with less waiting for a smoother conversation experience.
+Fixes
+Fixed an issue where previously configured BYOK custom models could take a long time to appear and become selectable after app startup.
+​
 September 26, 2026
 Qoder 0.4.3
 Everyday Polish
