@@ -65,6 +65,36 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+October 14, 2026
+Qoder 0.4.7
+Interactive Visualizations: Clearer Answers in Chat
+Features
+Interactive visualizations
+: Agent responses in local tasks can now display interactive charts, diagrams, and interface prototypes that you can view and explore without leaving the conversation.
+Agent Teams
+: Now available in the personal edition. Create your own Agent team, with a Team Leader to assign work, coordinate members, and summarize progress.
+Phone use (Mac with Apple silicon)
+: Added iPhone control. Enable the required plugin and complete device setup to let an Agent operate your connected iPhone and view its screen in the task sidebar.
+Locked use (Beta)
+: On macOS 14.4 or later, enable Locked use in Settings → Computer Use and complete administrator authorization to allow Qoder to keep operating desktop apps after your Mac is locked.
+Collaboration through conversation
+: Accounts with collaboration access can query and manage projects, issues, and discussions from local tasks, including managing members and updating progress through conversation.
+WorkBuddy data import
+: Import task history, scheduled tasks, memory, and transferable Skills, MCP connectors, and plugins from WorkBuddy on your computer into Qoder to continue your existing work.
+Improvements
+Remote Control
+: Sync SSH workspaces and sessions to continue existing remote tasks from your phone or create new tasks in supported remote workspaces.
+Remote SSH
+: Select Git branches in remote sessions and import Qoder IDE task history, MCP configuration, and memory from SSH instances. You can also configure WSL workspaces.
+Skill evolution suggestions
+: Improved readability in the suggestions popover, with options to create follow-up tasks for all suggestions or dismiss them all.
+Fixes
+Fixed the built-in browser covering dialogs and dropdown menus, preventing some actions from being completed.
+Fixed some HTTPS MCP connections failing because system-installed enterprise certificates were not trusted.
+Fixed Windows file links opening the wrong path or failing to open because path separators were incorrectly escaped.
+Fixed Remote Control remaining disconnected after its connection environment ID changed, even after retrying.
+Fixed project names being incorrectly displayed as project IDs when creating a discussion.
+​
 October 10, 2026
 Qoder 0.4.4
 Fast Models: Faster Responses, Less Waiting
