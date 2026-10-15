@@ -65,6 +65,12 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+October 15, 2026
+Qoder 0.4.8
+Everyday Polish
+Improvements
+Fixed an issue where past instructions could occasionally be queued again.
+​
 October 14, 2026
 Qoder 0.4.7
 Interactive Visualizations: Clearer Answers in Chat
