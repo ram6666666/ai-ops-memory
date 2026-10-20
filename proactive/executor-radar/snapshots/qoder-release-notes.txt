@@ -41,6 +41,7 @@ Cloud Agents Release Notes
 QoderWake Release Notes
 QoderWork Release Notes
 Product Announcements
+Introducing Qoder Lite: Start creating with Qoder for $10 a month
 Qoder Tier Upgrade: Performance Becomes Fast
 Qoder Model Usage Reference Factor Adjustment Notice
 Qoder IDE Quest window retirement notice
@@ -57,7 +58,6 @@ Efficient Model Tier: Free for Paid Users for a Limited Time
 Premium Model Discount Rates
 Limited-Time Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
-Qoder 1st Anniversary × Qwen3.8-Max Official Launch: Claim 800–2,000 Model Calls
 Changelog
 Qoder Release Notes
 Copy page
@@ -424,6 +424,7 @@ Cloud Agents Release Notes
 QoderWake Release Notes
 QoderWork Release Notes
 Product Announcements
+Introducing Qoder Lite: Start creating with Qoder for $10 a month
 Qoder Tier Upgrade: Performance Becomes Fast
 Qoder Model Usage Reference Factor Adjustment Notice
 Qoder IDE Quest window retirement notice
@@ -440,4 +441,3 @@ Efficient Model Tier: Free for Paid Users for a Limited Time
 Premium Model Discount Rates
 Limited-Time Offer: Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
-Qoder 1st Anniversary × Qwen3.8-Max Official Launch: Claim 800–2,000 Model Calls

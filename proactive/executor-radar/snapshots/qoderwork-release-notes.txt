@@ -41,6 +41,7 @@ Cloud Agents 更新日志
 QoderWake 更新日志
 QoderWork 更新日志
 产品公告
+Qoder Lite 上线：每月 10 美元，开始用 Qoder 尽情创造
 Qoder 档位升级：原 Performance 档位升级为 Fast 档位
 Qoder 模型用量参考系数调整通知
 Qoder IDE「Quest」视窗下线通知
@@ -57,7 +58,6 @@ SOTA 模型限时免费体验
 高级模型特惠折扣
 限时：开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
-Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用
 更新日志
 QoderWork 更新日志
 复制页面
@@ -747,7 +747,7 @@ QoderWork 0.0.26
 本地安全运行：我在你的设备本地运行，未经你的授权不会访问任何文件。你的数据始终在你手中，安全可控。
 我能做的远不止这些——从竞品调研报告的自动化生成、旅行行程的全套规划，到学术论文的端到端研究辅助，只要你能描述出来，我就能帮你搞定。 当前版本支持 macOS，Windows 正在路上。使用你的 Qoder 账号登录即可，Credits 额度通用。 让我们一起探索更高效的工作方式，开启这段令人振奋的 AI 协作之旅吧！
 上一页
-Qoder 档位升级：原 Performance 档位升级为 Fast 档位
+Qoder Lite 上线：每月 10 美元，开始用 Qoder 尽情创造
 下一页
 Qoder
 立即体验 Qoder
@@ -804,6 +804,7 @@ Cloud Agents 更新日志
 QoderWake 更新日志
 QoderWork 更新日志
 产品公告
+Qoder Lite 上线：每月 10 美元，开始用 Qoder 尽情创造
 Qoder 档位升级：原 Performance 档位升级为 Fast 档位
 Qoder 模型用量参考系数调整通知
 Qoder IDE「Quest」视窗下线通知
@@ -820,4 +821,3 @@ SOTA 模型限时免费体验
 高级模型特惠折扣
 限时：开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
 全新 Qoder 正式上线：限时福利
-Qoder 一周年 × Qwen3.8-Max 正式上线：限时领 800-2000 次模型调用
