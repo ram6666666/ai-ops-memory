@@ -51,6 +51,7 @@ Credits
 Pricing
 Billing
 Events
+Qoder 1024 · Community Boost
 Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade
 Claim 100 Credits Every Day
 Qwen3.8-Flash: Free for a Limited Time
@@ -65,6 +66,39 @@ Copy page
 Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
+​
+October 22, 2026
+Qoder 0.4.9
+Work with Qoder in WeCom
+Features
+WeCom integration
+: After configuring the required plugin, chat with Qoder, start tasks, and receive replies in WeCom, keeping work conversations and task execution connected.
+Video generation and preview
+: Generate videos through conversation, check their status in the task monitor, and play them directly once generation and download are complete. You can also preview MP4 and WebM files in your workspace.
+Open Qoder from a file
+: Use your system's Open with option to open supported local files in Qoder. A new task draft includes the files as attachments, ready for you to add instructions and start working.
+Linux desktop support
+: Added a Linux ARM64 desktop version and improved compatibility with Kylin systems and LoongArch platforms.
+Recoverable side tasks (Experimental)
+: Enable this under Settings → Experiments to retain newly created side tasks after closing their tabs or quitting Qoder, and continue them from the task monitor.
+Improvements
+Qoder Helper
+: Use local conversations to learn how to use Qoder, adjust supported app settings, manage Agents and connectors, and install extensions when requested.
+Incremental conversation import
+: Detect source updates to previously imported tasks from Qoder IDE, QoderWork, or WorkBuddy. Eligible records that have not been further modified in Qoder can be imported again without creating duplicate tasks.
+Extension discovery
+: The extension marketplace now includes New & noteworthy recommendations and Partner badges, making it easier to discover new extensions and identify capabilities from partners.
+Sidebar customization
+: Reorder navigation entries, move them between sections, and tuck less-used entries into More.
+Dynamic Island (macOS)
+: View task progress, answer questions, and handle permission requests at the top of your screen. Enable it independently of the desktop pet.
+Network proxy
+: Manual proxy configuration now supports bypass addresses, allowing direct connections to specified domains or IP addresses. Restart the app after saving for changes to take effect.
+Fixes
+Fixed captured file-diff records sometimes being lost after a task finished.
+Fixed configured or manually selected permissions sometimes not taking effect when starting a task with a custom Agent.
+Fixed some available Skills missing from the picker when opening a Remote SSH task for the first time or after a turn finished.
+Fixed plugin replacement failures that could leave a plugin unusable.
 ​
 October 15, 2026
 Qoder 0.4.8
@@ -435,6 +469,7 @@ Credits
 Pricing
 Billing
 Events
+Qoder 1024 · Community Boost
 Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade
 Claim 100 Credits Every Day
 Qwen3.8-Flash: Free for a Limited Time
