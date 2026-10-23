@@ -1,4 +1,3 @@
-Qoder Release Notes - Qoder
 Documentation Index
 Fetch the complete documentation index at:
 /llms.txt
@@ -478,3 +477,4 @@ Efficient Model Tier: Free for Paid Users for a Limited Time
 Premium Model Discount Rates
 [Ended] Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
+Qoder Release Notes - Qoder
