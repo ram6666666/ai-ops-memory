@@ -1,3 +1,4 @@
+Qoder Release Notes - Qoder
 Documentation Index
 Fetch the complete documentation index at:
 /llms.txt
@@ -65,6 +66,18 @@ Copy page
 Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
+​
+October 23, 2026
+Qoder 0.4.11
+Improvements
+Model selection
+: Improved model lists and grouping, with load indicators for supported models, New or Free badges.
+Model update notifications
+: The model picker now highlights newly added models and relevant badge updates. Viewing the corresponding group clears its read notifications.
+Fixes
+Fixed scroll-position jumps, unexpected movement while reading history, and incorrect latest-message following when loading earlier messages or updating message layouts.
+Fixed closed built-in browser pages failing to recover when reloaded.
+Fixed some historical tasks failing to continue from mobile.
 ​
 October 22, 2026
 Qoder 0.4.9
@@ -477,4 +490,3 @@ Efficient Model Tier: Free for Paid Users for a Limited Time
 Premium Model Discount Rates
 [Ended] Double First-Month Credits and 1,000 Bonus Credits on Renewal
 The New Qoder Is Here: Limited-Time Launch Benefits
-Qoder Release Notes - Qoder

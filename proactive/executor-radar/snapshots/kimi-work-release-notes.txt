@@ -1,3 +1,4 @@
+Kimi Work 发布日志 - Kimi 帮助中心
 产品
 产品
 产品
@@ -64,6 +65,7 @@ Kimi 企业版
 联系销售
 研究
 研究
+Kimi K3.1 Pro
 Kimi K3
 PerceptionBench
 Kimi K2.6
@@ -438,6 +440,7 @@ PPT
 深度研究
 全部功能
 研究
+Kimi K3.1 Pro 技术博客
 Kimi K3 技术博客
 Kimi K2.6 技术博客
 Kimi K2.5 技术博客
@@ -487,4 +490,3 @@ Moonshot AI
 服务条款
 隐私政策
 信任与安全
-Kimi Work 发布日志 - Kimi 帮助中心
