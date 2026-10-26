@@ -54,6 +54,7 @@ Events
 Qoder 1024 · Community Boost
 Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade
 Claim 100 Credits Every Day
+DeepSeek-Flash: Free for a Limited Time
 Qwen3.8-Flash: Free for a Limited Time
 SOTA Models — Limited-Time Free Experience
 Efficient Model Tier: Free for Paid Users for a Limited Time
@@ -69,6 +70,7 @@ This page lists the release history for Qoder, with the newest update first.
 ​
 October 23, 2026
 Qoder 0.4.11
+Everyday Polish
 Improvements
 Model selection
 : Improved model lists and grouping, with load indicators for supported models, New or Free badges.
@@ -133,12 +135,12 @@ Locked use (Beta)
 Collaboration through conversation
 : Accounts with collaboration access can query and manage projects, issues, and discussions from local tasks, including managing members and updating progress through conversation.
 WorkBuddy data import
-: Import task history, scheduled tasks, memory, and transferable Skills, MCP connectors, and plugins from WorkBuddy on your computer into Qoder to continue your existing work.
+: Import task records, scheduled tasks, memory, and supported Skills, MCP connectors, and plugins from WorkBuddy on your computer into Qoder to continue your existing work.
 Improvements
 Remote Control
 : Sync SSH workspaces and sessions to continue existing remote tasks from your phone or create new tasks in supported remote workspaces.
 Remote SSH
-: Select Git branches in remote sessions and import Qoder IDE task history, MCP configuration, and memory from SSH instances. You can also configure WSL workspaces.
+: Select Git branches in remote sessions and import Qoder IDE task history, MCP configuration, and memory from SSH instances. WSL workspace setup is also supported.
 Skill evolution suggestions
 : Improved readability in the suggestions popover, with options to create follow-up tasks for all suggestions or dismiss them all.
 Fixes
@@ -484,6 +486,7 @@ Events
 Qoder 1024 · Community Boost
 Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade
 Claim 100 Credits Every Day
+DeepSeek-Flash: Free for a Limited Time
 Qwen3.8-Flash: Free for a Limited Time
 SOTA Models — Limited-Time Free Experience
 Efficient Model Tier: Free for Paid Users for a Limited Time

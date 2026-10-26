@@ -54,6 +54,7 @@ Credits
 Qoder 1024 · 创造力集结
 限时：首购 Credits 买一送一，续费与升级加赠 Credits
 每日领取 100 Credits
+DeepSeek-Flash 限时免费使用
 Qwen3.8-Flash 限时免费使用
 SOTA 模型限时免费体验
 「经济」(Efficient) 模型档位限时免费
@@ -819,6 +820,7 @@ Credits
 Qoder 1024 · 创造力集结
 限时：首购 Credits 买一送一，续费与升级加赠 Credits
 每日领取 100 Credits
+DeepSeek-Flash 限时免费使用
 Qwen3.8-Flash 限时免费使用
 SOTA 模型限时免费体验
 「经济」(Efficient) 模型档位限时免费

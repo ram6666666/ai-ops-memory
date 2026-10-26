@@ -11,8 +11,8 @@
     "kimi-work-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-10-24T12:40:06+00:00",
-      "sha256": "c1e266be63c3ff091c2a2fe572036e55c47b68f3bdb5a7ecbbb59d5344732889",
+      "last_changed_at": "2026-10-26T15:10:54+00:00",
+      "sha256": "adbe3e10be020939db5ced4ddfd7e63b2d6e1f9771ff61d762ef5eccc881e26c",
       "url": "https://www.kimi.ai/zh-hans/help/kimi-work/release-notes"
     },
     "openai-chatgpt-release-notes": {
@@ -32,15 +32,15 @@
     "qoder-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-10-24T12:40:06+00:00",
-      "sha256": "15cabfea7e833b517da0d970f51b6d79dd03a1cec04ad9081f7ea15cf64dcbc5",
+      "last_changed_at": "2026-10-26T15:10:54+00:00",
+      "sha256": "1840fc6739d1436e6bb3c5e3e5bd36a1cba443f4d7c5f2528f8f50b2169807b5",
       "url": "https://docs.qoder.com/release-notes/qoder"
     },
     "qoderwork-release-notes": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-10-24T12:40:06+00:00",
-      "sha256": "5815c3c27045018e64c39c132fb7d4a3566e35e76d57fa4c404629e5094d6636",
+      "last_changed_at": "2026-10-26T15:10:54+00:00",
+      "sha256": "c89d82f5c573597feb2158f0764ac106d69a44d2729b1956342cec37acbc3f83",
       "url": "https://docs.qoder.com/zh/release-notes/qoderwork"
     }
   }
