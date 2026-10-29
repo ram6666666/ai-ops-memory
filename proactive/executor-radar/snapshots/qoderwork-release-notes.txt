@@ -51,6 +51,7 @@ Credits
 价格
 计费
 事件
+邀请好友完成任务，得好礼
 Qoder 1024 · 创造力集结
 限时：首购 Credits 买一送一，续费与升级加赠 Credits
 每日领取 100 Credits
@@ -817,6 +818,7 @@ Credits
 价格
 计费
 事件
+邀请好友完成任务，得好礼
 Qoder 1024 · 创造力集结
 限时：首购 Credits 买一送一，续费与升级加赠 Credits
 每日领取 100 Credits
