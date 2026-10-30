@@ -69,6 +69,46 @@ Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
 ​
+October 30, 2026
+Qoder 0.5.1
+Different devices,One flow
+Features
+Device connections
+: Use a pairing code to connect to other Qoder devices on your local network. Access authorized workspaces to run tasks, use terminals, browse the web, and work with files on the connected device. Control workspace access and session synchronization, and revoke connection access when needed.
+Cross-device collaboration
+: Use @ in a local task to reference a connected device's workspace and delegate tasks. View Agents on other devices, cached conversation history, and device update status. Remote models and browser sessions are managed per execution device.
+Needs Me
+: Review items that need a response, results that need your attention, and activity from tasks and available collaboration features in one inbox. Filter and search items, handle approvals, and review your history.
+Codex data import
+: Detect and selectively import Codex conversations, compatible local automations, memory, and supported Skill, MCP, and plugin configurations. Imported plugins start disabled; application-specific capabilities are excluded.
+Cloud Agent management
+: Create, edit, and manage cloud Agents, configure their models, instructions, and resources, and manage Skills, MCP connections, and memory that can be synced to the cloud. Availability depends on account permissions and cloud service configuration.
+Excel plugin
+: Added an Excel plugin to create, edit, and analyze spreadsheets through conversation, organize data, calculate formulas, and adjust formatting. Preview, manually edit, and save spreadsheets directly in Qoder.
+Improvements
+Projects and discussions
+: Projects can now be associated with multiple repositories. Search organization members in discussions, with direct additions governed by each member's preferences. Improved mentions, message reactions, and key-message actions.
+Agent Teams
+: Added a software development expert team template. Create a team of specialized research, development, testing, and review Agents with one click to collaborate on development tasks.
+Conversation input
+: Improved slash-menu categories and recent items, @ file search, input-history reuse, and attachment previews before sending, along with long-text editing and input responsiveness.
+Remote Control
+: Added synchronization for task archiving and restoration, improved the display of plan approval details, and increased the transfer limit for individual artifact files to 100 MiB.
+Worktrees
+: Preserve required project configuration when creating worktrees. When carrying over local changes, keep them unstaged where possible for continued review.
+Qoder Helper and feedback
+: Qoder Helper can inspect relevant log excerpts when explicitly requested and provides clearer guidance for settings changes. Feedback can also be submitted from the recovery screen after a startup failure.
+HarmonyOS foldables
+: Added upper-and-lower workspace panels for supported foldables in a partially folded horizontal posture, with layout restoration when unfolding and folding again.
+Fixes
+Fixed false duplicate-install errors for enterprise-managed plugins and inconsistent discovery and invocation names for commands in subdirectories.
+Fixed some settings and MCP management actions failing to follow the current conversation's approval policy.
+Fixed capability loading failures when using the slash menu on the home screen with some older General workspaces.
+Fixed Git status reads failing or consuming resources for extended periods on Windows, and improved error messages for large repositories.
+Fixed default MCP discovery and generated-file access for some SSH connections, along with Windows connection initialization issues.
+Fixed Remote Control history ordering, approval-state recovery, and queued-message handling after stopping a task.
+Fixed an issue where Qoder stopped waiting too soon when sign-in through an external browser took longer.
+​
 October 23, 2026
 Qoder 0.4.11
 Everyday Polish
