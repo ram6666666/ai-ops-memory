@@ -41,3 +41,7 @@ Never store secrets, credentials, transient authorization codes, private access 
 ## Runtime relationship
 
 Google Drive keeps a searchable runtime manual for narrow retrieval during active work. This repository is the durable versioned knowledge/capability layer; Drive is the fast runtime mirror, not a competing canonical implementation store.
+
+## User-authorized recovery routes
+
+- [Copied-successor recovery](operations/COPY_SUCCESSOR_RECOVERY.md): preserve the original and continue an already authorized task on a new named source copy when an older execution outcome cannot be resolved; retain honest uncertainty and normal scientific/delivery gates. The linked immutable user command supplies the standing authorization. This is not a claim of provider cancellation or enforced isolation.
