@@ -51,6 +51,7 @@ Credits
 Pricing
 Billing
 Events
+Limited Time: Bonus SOTA Credits with Your First Subscription
 Invite Friends to Complete Tasks and Earn Rewards
 Qoder 1024 · Community Boost
 Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade
@@ -68,6 +69,21 @@ Copy page
 Release history for Qoder.
 Copy page
 This page lists the release history for Qoder, with the newest update first.
+​
+November 3, 2026
+Qoder 0.5.3
+Everyday Polish
+Fixes
+Fixed workspace and recent-task lists remaining in a loading state during repeated updates, and improved display stability while the lists reload.
+Fixed task-list loading failures caused by empty source-session information in some historical conversations.
+​
+November 2, 2026
+Qoder 0.5.2
+Everyday Polish
+Fixes
+Fixed startup and conversation-loading failures caused by invalid execution-environment data in some historical conversations.
+Fixed malformed task records preventing other valid tasks from loading.
+Fixed conversations remaining stuck and unable to continue after a background execution process failed in some scenarios.
 ​
 October 30, 2026
 Qoder 0.5.1
@@ -524,6 +540,7 @@ Credits
 Pricing
 Billing
 Events
+Limited Time: Bonus SOTA Credits with Your First Subscription
 Invite Friends to Complete Tasks and Earn Rewards
 Qoder 1024 · Community Boost
 Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade
