@@ -1,73 +1,70 @@
-Qoder Release Notes - Qoder
+Qoder Release Notes - Qoder Changelog
 Documentation Index
 Fetch the complete documentation index at:
 /llms.txt
 Use this file to discover all available pages before exploring further.
 Skip to main content
-Qoder
+Qoder Changelog
 home page
 English
 Search in Docs
 ⌘K
 Download
 Download
-Qoder Series
 Qoder
 IDE
 JetBrains Plugin
-CLI
+Qoder CLI
 Agent SDK
 Cloud Agents
-Mobile & Web
 QoderWake
-Enterprise
-Qoder Series
+Qoder
 Qoder Release Notes
-Website
-Forum
-Blog
-Product Overview
-What is Qoder
-Customer Cases
-Quick Start
-Quick Start
-Changelog
 Qoder Release Notes
-IDE Release Notes
-JetBrains Plugin Release Notes
-Qoder CLI Release Notes
-Qoder Agent SDK Release Notes
-Cloud Agents Release Notes
-QoderWake Release Notes
-QoderWork Release Notes
-Product Announcements
-Introducing Qoder Lite: Start creating with Qoder for $10 a month
-Qoder Tier Upgrade: Performance Becomes Fast
-Qoder Model Usage Reference Factor Adjustment Notice
-Qoder IDE Quest window retirement notice
-Removal of the Lite model tier
-Account
-Credits
-Pricing
-Billing
-Events
-Limited Time: Bonus SOTA Credits with Your First Subscription
-Invite Friends to Complete Tasks and Earn Rewards
-Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade
-Claim 100 Credits Every Day
-DeepSeek-Flash: Free for a Limited Time
-Qwen3.8-Flash: Free for a Limited Time
-SOTA Models — Limited-Time Free Experience
-Efficient Model Tier: Free for Paid Users for a Limited Time
-Premium Model Discount Rates
-[Ended] Double First-Month Credits and 1,000 Bonus Credits on Renewal
-The New Qoder Is Here: Limited-Time Launch Benefits
-Changelog
-Qoder Release Notes
-Copy page
-Release history for Qoder.
-Copy page
-This page lists the release history for Qoder, with the newest update first.
+This page lists the release history for Qoder in reverse chronological order. Haven’t downloaded yet?
+Get it now
+​
+November 5, 2026
+Qoder 0.5.5
+Take Documents and Sites Further
+Features
+Word plugin
+: Adds a Word plugin for opening, editing, and saving DOCX files in Qoder, with conversation-based assistance for working on document content.
+Sites design canvas
+: Adjust Site page content and layout on a design canvas and use annotations to request changes. Add website templates as task attachments and choose a design style while keeping your own instructions.
+Local browser access for remote tasks
+: Supported remote sessions can use an authorized connection to operate the controlling device’s Qoder built-in browser alongside remote execution.
+HarmonyOS tap-to-share
+: On supported HarmonyOS devices, transfer images and PDFs from a phone into the current local task or a new task draft, or send local files to the phone with tap-to-share.
+Enterprise approval controls
+: Enterprise policies can restrict Full Access and Auto approval. When a mode is disabled, subsequent operations follow an available approval mode.
+Improvements
+Agent Teams
+: Select members from the current device, the cloud, and other devices on the same account, enabling collaboration when required. Connected-device workspaces can use their associated teams. Leaders on other devices can participate in discussions; local tasks remain subject to the execution restrictions of the leader’s device.
+Plugin creation
+: Adds the built-in Plugin Creator to improve conversational plugin creation, customization, and packaging, combining Skills, commands, Agents, Hooks, MCP, and related capabilities.
+Local extension installation
+: Install plugins and Skills by dragging or pasting files. Plugins requesting Qoder SDK access show a manual authorization prompt during installation or permission changes.
+Plan and Goal
+: After reviewing a plan, choose Goal execution in supported tasks to continue working toward an explicit outcome.
+SSH and WSL
+: Improves connection management and workspace creation, including direct SSH host entry, authentication selection, and connection reassociation. Manually disconnecting pauses automatic reconnection while preserving workspaces and task records.
+Device connections
+: Sets initial pairing permissions according to the account relationship and improves address validation and local-network diagnostics. Explicitly confirm before stopping remote work for an update, and reference cached conversations from offline devices in local tasks.
+Model selection
+: New tasks can default to an available free official model when the account is confirmed to have exhausted its credits. Adds large-context usage hints, exclusive-pack balance notices, and clearer rate-limit messages.
+Diagnostics and feedback
+: Improves Qoder Helper’s Hook timing diagnostics and troubleshooting for remote devices.
+Cross-device automations
+: Use the slash menu in a connected-device conversation to create automations that run and are managed on that device. This entry is not available in SSH or WSL conversations.
+Fixes
+Fixed stalled backward navigation, missing chapter entries, and conflicts between search navigation and returning to the bottom in long conversations.
+Fixed derived tasks losing custom groups, some forked tasks remaining unusable after initialization failures, and missing history links for background subagents.
+Fixed restoring one task in an archived workspace also restoring other archived tasks.
+Fixed failures when sending structured or Sites template attachments to remote tasks, or withdrawing and resending queued attachments. Also fixed remote Office attachment previews, saving, and generated-file access.
+Fixed inconsistent model catalogs, default models, and enterprise model categories in cross-device conversations.
+Fixed remote recent-conversation ordering, synchronization recovery after catalog subscriptions end, and live voice state display.
+Fixed initial handoff to remote teams, references in follow-up delegation, collaboration activation for plugin Agents, and team history display after account switches.
 ​
 November 3, 2026
 Qoder 0.5.3
@@ -470,83 +467,8 @@ Proactive
 This is just the beginning.
 Our direction is clear: fewer handoffs, more trustworthy results.
 As Coding becomes a universal capability, a coding agent gives anyone the power to turn ideas into reality.
-Previous
-IDE Release Notes
-Release history for IDE.
-Next
-Qoder
-Try Qoder now
-Qoder
-Mobile
-Integrating Qoder Agent
-Agent SDK
-Cloud Agents
-AI Employees
-QoderWake
-Terms
-Terms of Service
-Privacy Policy
-Other ways to use
-IDE
-JetBrains Plugin
-CLI
-Get Started
-Enterprise
-Price
-Download
-Resource
-Marketplace
-Activities
-Docs
-Blog
-FAQ
-Changelog
-Connect
-Feedback
-Contact Sales
-Forum
-About Us
-© 2026 BRIGHT ZENITH PRIVATE LIMITED. · Powered by Real Knowledge Buddy
-Qoder
+Qoder Changelog
 home page
 en
-Qoder Series
-Website
-Forum
-Blog
-Product Overview
-What is Qoder
-Customer Cases
-Quick Start
-Quick Start
-Changelog
+Qoder
 Qoder Release Notes
-IDE Release Notes
-JetBrains Plugin Release Notes
-Qoder CLI Release Notes
-Qoder Agent SDK Release Notes
-Cloud Agents Release Notes
-QoderWake Release Notes
-QoderWork Release Notes
-Product Announcements
-Introducing Qoder Lite: Start creating with Qoder for $10 a month
-Qoder Tier Upgrade: Performance Becomes Fast
-Qoder Model Usage Reference Factor Adjustment Notice
-Qoder IDE Quest window retirement notice
-Removal of the Lite model tier
-Account
-Credits
-Pricing
-Billing
-Events
-Limited Time: Bonus SOTA Credits with Your First Subscription
-Invite Friends to Complete Tasks and Earn Rewards
-Limited-Time Offer: Double Credits on Your First Subscription, Plus Bonus Credits on Renewal and Upgrade
-Claim 100 Credits Every Day
-DeepSeek-Flash: Free for a Limited Time
-Qwen3.8-Flash: Free for a Limited Time
-SOTA Models — Limited-Time Free Experience
-Efficient Model Tier: Free for Paid Users for a Limited Time
-Premium Model Discount Rates
-[Ended] Double First-Month Credits and 1,000 Bonus Credits on Renewal
-The New Qoder Is Here: Limited-Time Launch Benefits

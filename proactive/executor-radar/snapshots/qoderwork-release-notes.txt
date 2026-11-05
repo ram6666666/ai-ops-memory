@@ -1,73 +1,26 @@
-QoderWork 更新日志 - Qoder
+QoderWork 更新日志 - Qoder 更新日志
 Documentation Index
 Fetch the complete documentation index at:
 /llms.txt
 Use this file to discover all available pages before exploring further.
 Skip to main content
-Qoder
+Qoder 更新日志
 home page
 简体中文
 搜索
 ⌘K
 下载
 下载
-Qoder 系列
 Qoder
 IDE
 JetBrains 插件
-CLI
+Qoder CLI
 Agent SDK
 Cloud Agents
-移动端&网页版
 QoderWake
-企业版
-Qoder 系列
-QoderWork 更新日志
-网站
-论坛
-博客
-产品概述
-什么是 Qoder
-客户案例
-快速入门
-快速入门
-更新日志
 Qoder 更新日志
-IDE 更新日志
-JetBrains 插件更新日志
-Qoder CLI 更新日志
-Qoder Agent SDK 更新日志
-Cloud Agents 更新日志
-QoderWake 更新日志
-QoderWork 更新日志
-产品公告
-Qoder Lite 上线：每月 10 美元，开始用 Qoder 尽情创造
-Qoder 档位升级：原 Performance 档位升级为 Fast 档位
-Qoder 模型用量参考系数调整通知
-Qoder IDE「Quest」视窗下线通知
-「轻量」（Lite）模型档位下线通知
-账户
-Credits
-价格
-计费
-事件
-限时：首次订阅加赠 SOTA Credits
-邀请好友完成任务，得好礼
-限时：首购 Credits 买一送一，续费与升级加赠 Credits
-每日领取 100 Credits
-DeepSeek-Flash 限时免费使用
-Qwen3.8-Flash 限时免费使用
-SOTA 模型限时免费体验
-「经济」(Efficient) 模型档位限时免费
-高级模型特惠折扣
-【已结束】开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
-全新 Qoder 正式上线：限时福利
-更新日志
-QoderWork 更新日志
-复制页面
-QoderWork 的版本更新记录。
-复制页面
-本文汇总 QoderWork 的版本更新记录，按发布时间倒序排列。
+本文汇总 QoderWork 的版本更新记录，按发布时间倒序排列。 还没下载吗？
+立即获取
 ​
 2026年07月15日
 QoderWork 0.9.12
@@ -750,82 +703,8 @@ QoderWork 0.0.26
 能力可扩展，场景无边界：我内置了多种主流 MCP 工具集成（如 GitHub、高德地图、浏览器自动化等），同时支持自定义 Skills，让你可以打造专属的智能工作流，覆盖各种工作场景。
 本地安全运行：我在你的设备本地运行，未经你的授权不会访问任何文件。你的数据始终在你手中，安全可控。
 我能做的远不止这些——从竞品调研报告的自动化生成、旅行行程的全套规划，到学术论文的端到端研究辅助，只要你能描述出来，我就能帮你搞定。 当前版本支持 macOS，Windows 正在路上。使用你的 Qoder 账号登录即可，Credits 额度通用。 让我们一起探索更高效的工作方式，开启这段令人振奋的 AI 协作之旅吧！
-上一页
-Qoder Lite 上线：每月 10 美元，开始用 Qoder 尽情创造
-下一页
-Qoder
-立即体验 Qoder
-Qoder
-移动端
-集成 Qoder Agent
-Agent SDK
-Cloud Agents
-AI 员工
-QoderWake
-条款
-服务条款
-隐私政策
-其他使用方式
-IDE
-JetBrains 插件
-CLI
-立即获取
-企业版
-价格
-下载
-资源
-能力市场
-活动
-文档
-博客
-常见问题
-更新日志
-联系我们
-意见反馈
-联系销售
-论坛
-关于我们
-© 2026 BRIGHT ZENITH PRIVATE LIMITED. · Powered by Real Knowledge Buddy
-Qoder
+Qoder 更新日志
 home page
 zh
-Qoder 系列
-网站
-论坛
-博客
-产品概述
-什么是 Qoder
-客户案例
-快速入门
-快速入门
-更新日志
+Qoder
 Qoder 更新日志
-IDE 更新日志
-JetBrains 插件更新日志
-Qoder CLI 更新日志
-Qoder Agent SDK 更新日志
-Cloud Agents 更新日志
-QoderWake 更新日志
-QoderWork 更新日志
-产品公告
-Qoder Lite 上线：每月 10 美元，开始用 Qoder 尽情创造
-Qoder 档位升级：原 Performance 档位升级为 Fast 档位
-Qoder 模型用量参考系数调整通知
-Qoder IDE「Quest」视窗下线通知
-「轻量」（Lite）模型档位下线通知
-账户
-Credits
-价格
-计费
-事件
-限时：首次订阅加赠 SOTA Credits
-邀请好友完成任务，得好礼
-限时：首购 Credits 买一送一，续费与升级加赠 Credits
-每日领取 100 Credits
-DeepSeek-Flash 限时免费使用
-Qwen3.8-Flash 限时免费使用
-SOTA 模型限时免费体验
-「经济」(Efficient) 模型档位限时免费
-高级模型特惠折扣
-【已结束】开通 Pro / Pro+，首月 Credits 翻倍，续费加赠 1,000
-全新 Qoder 正式上线：限时福利
