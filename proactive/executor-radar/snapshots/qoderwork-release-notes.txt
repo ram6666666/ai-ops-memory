@@ -17,6 +17,7 @@ JetBrains 插件
 Qoder CLI
 Agent SDK
 Cloud Agents
+Qoder Mobile
 QoderWake
 Qoder 更新日志
 本文汇总 QoderWork 的版本更新记录，按发布时间倒序排列。 还没下载吗？
