@@ -25,13 +25,19 @@ Qoder Release Notes
 This page lists the release history for Qoder in reverse chronological order. Haven’t downloaded yet?
 Get it now
 ​
+November 17, 2026
+Qoder 0.5.14
+Everyday Polish
+Fixes
+Fixed a model validation issue.
+​
 November 16, 2026
 Qoder 0.5.13
 Everyday Polish
 Fixes
 Fixed invalid model settings or configurations in some subagents preventing the main conversation from starting or continuing.
 Fixed some tasks failing to open after frequent task switching, bursts of background notifications, or failures to load conversation content.
-Fixed activity notification or benefit reminder requests timing out prematurely when device information took longer to prepare.
+Fixed some users not receiving notifications to claim campaign benefits.
 Fixed context-limit errors from some models not being recognized correctly, preventing the expected recovery through compaction.
 Fixed context usage calculations retaining outdated settings after switching models or changing the context window.
 Fixed incorrect links between some retained messages when forking a compacted conversation or restoring it to a specific message.
