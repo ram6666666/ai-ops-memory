@@ -1,10 +1,359 @@
-ChatGPT — Release Notes | OpenAI Help Center
+ChatGPT release notes | OpenAI Help Center
+OpenAI Support
+Help
 All Collections
 ChatGPT
-ChatGPT — Release Notes
-ChatGPT — Release Notes
-A changelog of the latest updates and release notes for ChatGPT
-Updated: 2 hours ago
+ChatGPT release notes
+ChatGPT release notes
+Review the latest updates and release notes for ChatGPT.
+Updated: 15 hours ago
+November 20, 2026
+ChatGPT Space is rolling out to Plus
+Starting today, ChatGPT Space is rolling out globally to Plus users ages 18 and older. In Space, you can create interactive pages and presentations with ChatGPT, then invite other people with Space access to build on them with you. You can also set pages and slides to automatically update based on your connected apps and tools.
+Try making a to-do list that updates itself, a study guide with a 3D model you can explore, or a project plan that stays current with decisions from Slack. Tag ChatGPT in a comment to ask for changes. If you have a dot, you can invite it to collaborate, too.
+To open a shared page or presentation, you need permission to view it and must be signed in to a Plus, Pro, Business, or Enterprise account with Space access. People on Free can’t open shared pages or presentations. Public links aren’t available.
+To get started, open Space in the sidebar. It replaces Library and is your new home for pages, slides, images, and uploaded files.
+Use Space on the web, desktop app, and iOS and Android to create and edit pages.
+November 19, 2026
+New mobile experience for ChatGPT
+We’re rolling out a new experience for the ChatGPT mobile app that makes it easier to get to your favorite features and discover more of what you can do. Your dot has its own tab, and you can pin favorites like Codex, Projects, and Images to the tab bar.
+We’re starting with ChatGPT Pro users who are 18 or older in regions where dots are available. This rollout excludes the European Economic Area (including the EU), the UK, Switzerland, and Korea. A small group of eligible Plus users will also see the new experience.
+Some eligible Pro users will see the new experience by default. If
+New ChatGPT design
+appears in
+Settings
+, you can turn it on or off there.
+Learn more about the new experience in the ChatGPT mobile app
+.
+Health on Android, desktop, dots and sites
+Starting today, Health is rolling out to more of the places you use ChatGPT, including the desktop app, dots, sites, and Android, with support for Health Connect.
+Connect your health and fitness information with Android Health Connect to explore patterns in your sleep, activity, and more.
+Get proactive suggestions from your dot, like another time for a workout when a meeting gets in the way or a reminder about preventive care options based on your connected medical records.
+Use the desktop app to build a site to track your marathon training, with your runs and progress toward your training plan in one place.
+To get started, update to the latest ChatGPT app and select
+Health
+in the sidebar. If it isn’t listed, find Health in the
+Explore menu
+. This update is rolling out gradually, so it may not be available for your account yet.
+Health is available to Free, Go, Plus, and Pro users in the U.S. Dots are currently available to Pro users. See:
+Getting started with your dot
+.
+Learn more about Health in ChatGPT
+.
+November 18, 2026
+Live Dictation in ChatGPT
+Dictation in ChatGPT is getting faster and more reliable.
+With Live Dictation, your speech turns into text as you talk, so you spend less time waiting for your message to finish transcribing. Tap or click on the waveform to show or hide text as you go. We’ve also removed the 10-minute recording limit.
+Live Dictation is rolling out globally to all ChatGPT plans on iOS, Android, web, and the desktop app.
+Learn more about voice dictation
+.
+Accounting workflows in ChatGPT
+The Accounting plugin helps you reconcile transactions, draft invoice entries, and prepare month-end reports from your records and templates.
+Open the
+ChatGPT desktop app
+for macOS or Windows,
+set up computer use
+, and open the
+Accounting plugin
+listing. Select
+Install plugin
+if it’s available for your plan and workspace. In Enterprise workspaces, an admin must approve Accounting before members can install it.
+November 17, 2026
+GPT-6.2 Astra and Sol in ChatGPT Work and Codex
+We’re introducing
+GPT-6.2 Astra and GPT-6.2 Sol
+in ChatGPT Work and Codex. Astra is our frontier model for complex work across research, software development, and other professional fields. Sol combines strong reasoning with speed and efficiency for a wide range of everyday tasks. Both models are available in preview in Work and Codex desktop.
+On Plus or Pro, choose either model in the
+Work model picker or the Codex model selector
+. In a managed workspace, the models you see depend on your seat and workspace settings. Regular Chat keeps its existing
+model choices
+.
+November 16, 2026
+Clinical search and plugins for ChatGPT for Clinicians
+We’ve improved clinical search in ChatGPT for Clinicians, with updates to how ChatGPT finds, evaluates, and cites medical evidence. Healthcare plugins also let you connect supported tools to ChatGPT.
+Plugin availability and requirements vary. For details, see:
+ChatGPT for Clinicians
+.
+November 13, 2026
+Introducing ChatGPT Wallet
+ChatGPT Wallet helps your dot go from finding what you need to making a purchase on your behalf. Whether you’re shopping for a new sweater or booking a hotel, you can ask your dot to help and use Wallet when it’s time to check out. Save an eligible card once, then approve purchases without entering your payment details again.
+Before your dot pays, you review the merchant, items, total, and selected card, then authorize the purchase using biometrics such as Face ID or Touch ID. Wallet provides a substitute payment credential for checkout, keeping your actual card details hidden from the agent and business. You retain the rewards associated with your card and its protections for qualifying disputes.
+Wallet is rolling out gradually in dots to ChatGPT Pro subscribers age 18 or older in the United States, with an eligible US-issued card and US billing address. To get started, ask your dot to add a card to Wallet. Some websites may not support purchases made by agents, and approval alone doesn’t confirm an order—check the merchant’s confirmation after checkout. For setup and purchase guidance, see:
+Making purchases with ChatGPT Wallet
+.
+November 10, 2026
+Retiring Advanced and Standard Voice
+We’re retiring Advanced and Standard voice from ChatGPT Voice on December 11, 2026.
+In July, we introduced GPT-Live, our latest voice model that combines natural conversation with frontier intelligence. Since then, voice usage has nearly doubled, and virtually all people using voice in ChatGPT now use GPT-Live. This change will allow us to simplify the voice experience and focus on improving GPT-Live.
+We've learned a lot from how people used both Advanced and Standard voice, and we're bringing those learnings into GPT-Live as we continue to improve areas like the depth and detail of responses, maintaining continuity across conversations, and better personalization. Our ultimate goal is to make voice a seamless part of the ChatGPT experience.
+Live video and screen-sharing will continue to be powered by Advanced voice until GPT-Live has this capability.
+Learn more about this change and what to expect in our
+Help Center article
+.
+Business Hub in ChatGPT
+Business Hub gives business owners and authorized representatives a place to claim their business in ChatGPT. After your claim is approved, you can access your business in Business Hub. Once your identity verification with Persona is approved, you can publish updates to your business information, connect a product feed, and view insights such as mentions and website clicks.
+After Persona verification is approved, eligible ecommerce and online service businesses in the US with a website can also create a business agent that answers customer questions using information you provide. Review and publish your agent before customers can chat with it. To get started, open
+Business Hub
+from the sidebar in ChatGPT on the web.
+Read more:
+Setting up your business with ChatGPT
+November 4, 2026
+Introducing ChatGPT Images 2.6
+Our new image generation model creates images faster and is better at preserving details across edits, like a character’s outfit when you change the background. We’re also introducing two new features in ChatGPT.
+GIF creation
+is rolling out in ChatGPT. Ask for a looping animation, or upload a sketch and ask ChatGPT to make the character wave. You can adjust the playback speed and share the GIF.
+Saved reference images
+let you reuse a photo in later chats. For example, save a photo of your dog as Pepper, then ask for a watercolor portrait of @Pepper without uploading the photo again.
+October 30, 2026
+Account switching on iOS and Android
+Account switching is rolling out to the ChatGPT iOS and Android apps. You can stay signed in to up to 2 ChatGPT accounts at a time and switch between them without signing out. Each account keeps its own chats, memory, settings, and subscriptions.
+To get started, go to
+Settings > Switch account
+.
+Learn more about account switching
+.
+October 29, 2026
+More Work and Codex usage on Pro and Business Premium Plans
+We’re increasing the Work and Codex usage included in Pro and Business Premium plans. Pro 100 and Pro 500 plans now include twice their previous Work and Codex allowance.
+We’ve also canceled the Pro 200 reduction announced in our September 29 email. If you already had the higher Work and Codex allowance, you keep it. Starting October 29, Pro 200 subscribers on the lower allowance get twice their previous Work and Codex allowance, bringing them up to the same limit.
+October 28, 2026
+Texting your dot
+Texting your dot is starting to roll out in beta to Pro users in the U.S.
+Your dot is now just a text away. Reach your dot safely and securely, through iMessage or RCS. Your dot will also text you proactively with updates that may be relevant for you.
+Your dot can only text you, and you’re the only one who can text your dot. This doesn’t give your dot or OpenAI access to your other text conversations.
+To get started, open your dot’s profile in ChatGPT and select Texting. Make sure iMessage is enabled on your iPhone or RCS is enabled on your Android phone. Texting your dot shares the same memory and plugins as your dot in the ChatGPT app, so context carries over.
+We use
+Linq
+, a third-party messaging provider, to send and receive texts for your dot. As part of our partnership with Linq, we’ve done extensive penetration testing with our frontier models and third-party security firms.
+API credits for eligible ChatGPT Pro and Business plans
+Eligible ChatGPT Pro and Business subscribers can activate promotional API credits to build apps and agents with the OpenAI API. The credits apply to a linked API organization and are separate from ChatGPT usage credits.
+See
+API credits benefit for eligible ChatGPT subscriptions
+for eligibility, activation steps and offer terms.
+October 27, 2026
+iCloud Mail and Calendar plugins in ChatGPT
+iCloud users can now connect Mail and Calendar to ChatGPT to find emails, catch up on your inbox, check your schedule, and update calendar events.
+You can learn more about how ChatGPT uses connected apps
+here
+. Available to all ChatGPT plans on the web, desktop app, and iOS.
+October 26, 2026
+GPT-6.1 Terra
+GPT-6.1 Terra is rolling out in ChatGPT Work and Codex. It supports a range of tasks, including visual reasoning, computer use, and writing.
+The rollout includes Plus, Pro, Business, Enterprise, and Edu plans. As it reaches your account, you can use Terra in the Work and Codex experiences available with your plan, region, and workspace settings.
+Select
+GPT-6.1 Terra
+from the model list. Your plan’s overall usage limits are unchanged. Note that some Plus and Pro users may see GPT-6.1 Terra at Medium instead of GPT-6.1 Sol at Light in the default Power presets in Work. Standard and Fast modes are supported where available.
+Terra does not support UAE inference residency; this restriction is based on where inference runs, not your location.
+For help using the model, see:
+ChatGPT Work and Codex
+. For current usage estimates, see:
+Pricing
+.
+October 21, 2026
+MoMo payments in Vietnam
+You can now use MoMo to pay for ChatGPT Go, Plus, and Pro subscriptions purchased on chatgpt.com in Vietnam.
+Subscriptions purchased through the iOS or Android app continue to be managed by the Apple App Store or Google Play. For supported currencies and payment methods, see:
+Multi-currency billing
+.
+October 20, 2026
+Remix a Site in chat
+Workspace users can ask ChatGPT to remix a published Site they can view in their current workspace. A remix creates a separate Site and does not change the original.
+In chat, share the Site’s URL or mention the Site, then describe the changes you want. If you want to review the copy before it goes live, ask ChatGPT not to publish it yet.
+The copy includes content bundled with the published Site. Runtime settings, secrets, database records, and files in the Site’s storage are not copied.
+For remixing instructions, see:
+Creating and using ChatGPT Sites
+.
+Introducing l
+ocked chats
+Locked chats let you keep selected conversations in your account while hiding them from regular chat history, pinned chats, and search. Open them with your 4-digit account PIN or supported device authentication. Your retention and model-improvement settings stay unchanged.
+Locked chats are rolling out gradually to Free, Go, Plus, and Pro users on the web, in the iOS and Android apps, and in the
+new ChatGPT desktop app
+for macOS and Windows. To lock a chat, open a chat’s more options menu (•••) and select
+Lock chat
+.
+Learn more about locked chats
+.
+October 16, 2026
+Create and collaborate on slides in ChatGPT
+ChatGPT Slides lets you create presentations and keep working on them with your team in Space. Start from a conversation, files, or an outline, or share an example deck to guide the style and layout.
+Create and refine.
+Edit text, images, shapes, and charts directly, or ask ChatGPT to make changes. Generate custom images or add your own.
+Work together.
+Invite teammates to edit the same deck in real time and leave shared comments.
+Present or export.
+Present directly from ChatGPT. On the web, export to PowerPoint, PDF, or Google Slides. In the desktop app, open your deck in PowerPoint or Keynote when those apps are installed.
+Slides is rolling out to eligible Pro, Business, and Enterprise users with Space access on the web and in the desktop app. To get started, ask ChatGPT in
+Work
+to create a presentation in Space.
+Updates to GPT-6 Pro model in ChatGPT
+GPT-6 Pro in the chat tab now offers:
+Faster responses
+Improved use of plugins and tools to carry out tasks.
+Multiple agents that can work on different parts of a task in parallel. You can follow their progress in the conversation and open completed tasks to see what each agent did.
+This update is rolling out to eligible Pro users in ChatGPT. Availability in managed workspaces depends on workspace settings and rollout eligibility.
+October 15, 2026
+GPT-Live-1.1 and new voices in ChatGPT
+We’re rolling out GPT-Live-1.1 and GPT-Live-1.1 Quip, a mini version of the model, in ChatGPT Voice, with more natural accents across languages. Live also uses a wider range of short phrases to let you know when it’s searching.
+New Live voices include options for French, German, Hindi, Japanese, Korean, and Mexican Spanish, plus Bubbie in English. The voices you see may vary by region and account.
+To choose a voice, open
+Settings > Voice
+, then select
+Voice
+.
+For more information, see:
+ChatGPT Voice
+.
+Applications for the Rosalind Academic Plan
+The Rosalind Academic Plan helps eligible academic labs use ChatGPT for life sciences research. Approved labs can receive up to 30 ChatGPT Business Standard seats at no cost for up to 12 months, with GPT-Rosalind access subject to trusted-access approval.
+Applications are now open to labs at U.S. universities. If you’re a principal investigator or lab lead,
+apply on behalf of your lab
+. Applying doesn’t give your lab immediate access. After approval, follow the instructions to set up your workspace and enable access for approved members. Labs covered by an OpenAI Enterprise agreement should use their university’s access process. For eligibility and setup details, see:
+Rosalind Academic Plan
+.
+Site limits (Plus and Pro)
+There is no longer a fixed limit on the number of Sites you can create. Usage and storage limits continue to apply.
+For usage and limits, see:
+Creating and using ChatGPT Sites
+.
+October 9, 2026
+Composer predictions in Codex
+Composer predictions, available in beta, suggests your next message based on the conversation in your current Codex thread. After Codex responds, a suggestion may appear in the message box. Press Tab to accept it, then review or edit it before sending. Accepting a suggestion doesn’t send it automatically.
+The beta is available to personal ChatGPT Pro users aged 18 and older in all supported regions, in the latest Codex desktop app. It supports local and SSH threads using GPT-6 Astra or GPT-6.1 Sol. Predictions are on by default; turn off
+Show predictions
+in the
+Composer
+section of
+General
+settings. During the beta, generating predictions doesn’t count toward Codex usage limits or consume credits. Messages you send, including accepted predictions, follow normal Codex usage limits and billing.
+Read more:
+Composer predictions in Codex
+October 7, 2026
+GPT-6 and Intelligent UI in ChatGPT
+We’re introducing
+GPT-6 with Intelligent UI in ChatGPT
+. ChatGPT can now combine text, visuals, and interactive elements to fit your question, from side-by-side comparisons and diagrams to tools you can use directly in the conversation, such as calculators, bill splitters, and games. It can choose the format automatically, and still use a simple text answer when that works best.
+GPT-6 can also begin answering while it continues to think or use tools, then add more findings without another prompt. You can start reading before the full answer is ready.
+The rollout starts globally today for Plus, Pro, Business, and Enterprise in the Chat tab, and expands to Free and Go starting tomorrow. Enterprise availability depends on workspace admin settings.
+Plus, Pro, Business, and Enterprise use GPT-6 Sol; Free and Go use GPT-6 Luna. Intelligent UI is available from Instant through Extra High reasoning. The Pro reasoning option continues to use GPT-6 Astra and doesn’t support Intelligent UI. The models powering Work and Codex aren’t changing with this release.
+October 6, 2026
+Audio uploads in ChatGPT
+Upload audio files to ChatGPT to create transcripts, summarize recordings, and ask questions about their contents. You can turn a meeting, interview, or lecture into structured notes or a follow-up email draft. To get started, attach a supported audio file to a conversation and describe what you need.
+Audio uploads are available with paid ChatGPT subscriptions and workspaces. Availability may vary by workspace settings, region, client version, and model. Transcripts may contain errors, and performance may vary across languages.
+For more information, see:
+Uploading files and audio to ChatGPT
+.
+October 2, 2026
+Finances expands to Free and Go users
+Finances in ChatGPT is rolling out to Free and Go users in the U.S. on web, iOS, and Android. You can securely connect your financial accounts to find ways to save, understand your spending, and make sense of your investments, with answers grounded in your finances.
+Learn more about Finances in ChatGPT.
+October 1, 2026
+New ways to shop in ChatGPT
+See how clothes and accessories could look on you and save your favorites for later.
+Virtually try on clothing and accessories:
+A “Try on” button will appear on product listings for clothes and accessories in ChatGPT. Select it, then take or upload a selfie to generate a virtual try-on with ChatGPT Images. Your reference photo is saved for future try-ons. You can change or delete it in Settings → Personalization → Reference photos.
+Save your finds:
+Save any product to Favorites or create a folder to organize your finds in your ChatGPT Library.
+Available in ChatGPT on mobile and web.
+Scan notes and documents more easily with ChatGPT camera
+It’s now easier to bring your notes and documents into ChatGPT on your phone. Capture multiple pages in a row, and ChatGPT automatically combines them into a single PDF, ready to upload to your chat.
+To get started, open the camera in ChatGPT, tap the three-dot menu, and select Scan. Rolling out on iOS.
+September 29, 2026
+A new Pro plan with Astra Ultrafast
+We’re introducing Pro 500, a new $500/month plan with the highest included usage of the Pro plans and access to Astra Ultrafast in ChatGPT Work and Codex. Select Ultrafast in the model picker to use a faster service tier for GPT-6 Astra. It uses your included allowance first, then your credit balance after that allowance is used.
+Among Pro plans, Ultrafast is available only with Pro 500. Buying credits on Pro 100 or Pro 200 does not unlock it. Pro 500 subscriptions are available through ChatGPT on the web at launch.
+Learn more about
+ChatGPT Pro tiers
+.
+Codex Cloud
+Codex Cloud lets you start and continue coding tasks from desktop, web, or mobile using reusable environments with your project’s repositories, tools, and dependencies. Each task gets its own isolated workspace, and tasks can continue while your computer is asleep. In managed workspaces, your workspace’s Codex cloud-access settings apply.
+To connect repositories and prepare an environment, see:
+Set up and configure Codex Cloud
+. For availability and usage, see:
+Using Codex with your ChatGPT plan
+.
+Create and collaborate on Pages
+Turn a conversation into a Page, start from a template, or begin writing directly in Space. Edit the text yourself or ask ChatGPT to revise it, add charts, or create interactive content. Collaborators can work on the same Page and leave comments, with each person using their own ChatGPT.
+Pages follow Space’s availability and sharing settings. Sharing a Page does not give other people access to your private chats or memory; information added to the Page is visible to people who can view it.
+Creating, editing, and scheduling Sites
+Site owners and editors on Plus and Pro can select
+Edit site
+from a published Site in a desktop browser to continue editing in ChatGPT, review changes, and publish when ready.
+Site owners can also create recurring cloud schedules from
+Automations
+. These updates are available where Sites is supported. Learn more about
+creating and managing Sites
+.
+GPT-6.1 Sol in ChatGPT Work and Codex
+GPT-6.1 Sol improves on GPT-6 Sol in agentic coding, computer use, and professional work. We’re rolling it out in ChatGPT Work and Codex, starting with Pro users and expanding to Plus, Business, Enterprise, and Edu.
+Enterprise and Edu workspace owners can enable model access in Workspace settings > Permissions & roles, on the Workspace tab or through a custom role. Learn how to
+manage model access with role-based access control
+.
+For availability and model selection, see:
+ChatGPT Work and Codex
+.
+Meet your dot
+We’re introducing dots: always-on agents in ChatGPT that can take on ongoing work and keep making progress between conversations. Give your dot a goal, connect the apps it needs, and define what it can do on its own. Powered by GPT-6 Astra, your dot has its own cloud computer and can bring results back for your review.
+Dots are rolling out gradually to eligible Pro and Business Premium users aged 18 and older in supported markets. Pro access excludes the European Economic Area, Switzerland, and the UK at launch. Enterprise access is a beta and is off by default. Create your dot in the ChatGPT desktop app or on desktop web.
+For the next month, dots usage won’t count toward eligible Pro, Business, and Enterprise users’ plan allowances. After this period, we’ll share usage terms for each plan.
+Learn more about
+getting started with your dot
+.
+Meetings plugin
+We’re making it easier to bring meeting context into ChatGPT so you can act on next steps faster. The Meetings plugin takes notes for you based on what’s said in the meeting and saves personalized summaries with action items in ChatGPT Space. You can keep them private or share them with your team, then ask ChatGPT to update a project plan or draft a follow-up.
+Audio is deleted once your notes are ready and can’t be accessed or replayed. Available in beta in the ChatGPT desktop app on macOS to Pro and Business users, with Enterprise coming soon.
+Learn more
+.
+Organize your work in ChatGPT Space
+Space brings your Pages, files, and related work together in ChatGPT. Create a space for a project, add the material you need, and share it with other people so you can keep building on the same work. Space replaces Library for accounts with access; your existing Projects remain separate.
+Available to eligible Pro, Business, and Enterprise users in the ChatGPT desktop app and on the web. Sharing in managed workspaces follows your organization’s settings; Enterprise sharing is an opt-in preview.
+Pro 200 subscriptions
+Pro 200 is available for new subscriptions again at $200/month.
+Included usage allowances are changing. Users affected by these changes will receive an email with additional details. The monthly price remains $200.
+Learn more about
+Pro plans and existing subscriptions
+.
+Review pull requests with Codex
+Use Code Review in Codex to read pull-request summaries and diffs, review findings, and discuss changes. Open a pull request, inspect the changes, and ask Codex to explain a section or help address a potential issue before sharing feedback.
+Available through the Code Review plugin on supported desktop and web experiences. Access to a repository follows your connected account and workspace permissions.
+Learn more about
+Code Review
+.
+Scan repositories with Codex Security Cloud
+Codex Security Cloud can scan GitHub repositories on demand or on a schedule, while ongoing checks review new commits. Codex investigates findings, removes duplicates, and prepares proposed fixes for review. Scans run in the cloud and can continue after you close your laptop.
+Access requires the applicable workspace permissions, repository setup, and billing configuration. Existing Codex Security customers opt in before paid usage. This feature provides access to Daybreak Blue models only within Codex Security Cloud.
+Learn more about
+setting up Codex Security Cloud
+.
+Share your profile and showcase your Sites
+Your ChatGPT profile now brings together your bio, activity, and Sites you choose to showcase. Personal profiles are private by default. You can make yours public and share its link with other people signed in to ChatGPT. Shared profiles do not show conversation titles or content.
+Profile sharing and the Sites showcase are available on web and desktop. In Business workspaces, administrators control whether coworkers can view workspace profiles. Enterprise access is coming later.
+Learn more about
+shareable profiles
+.
+Sign in to other products with ChatGPT
+You can use your ChatGPT account to sign in to participating products without creating another password. The product receives your name, email address, and profile picture if you have one. Signing in does not share your ChatGPT conversations or memory; you approve any additional access separately.
+Available to signed-in ChatGPT users, subject to organization settings. Sign-in access is separate from permission to use your ChatGPT plan allowance.
+Learn more about
+Sign in with ChatGPT
+.
+Start automations from connected-app events
+Supported plugins can use MCP events to start an automation when something changes in a connected app. Describe what you want ChatGPT to follow and what it should do with matching updates—for example, prepare a summary when new information arrives in a channel you have asked it to monitor.
+The connected account must have access to the event and any information used by the task.
+Learn more about
+connected apps in ChatGPT
+.
+Use your ChatGPT allowance in participating apps
+Eligible Plus and Pro users can authorize participating apps to use their ChatGPT model allowance without creating an API key. Choose which apps can use your allowance and set an app-specific limit. Usage counts toward your existing plan allowance; connecting an app does not add more usage.
+This is a limited preview with participating integrations. Using purchased credits requires a separate opt-in. A partner may still charge for its own product or services.
+Learn more about
+using your ChatGPT allowance in other apps
+.
+Work with interactive plugin extensions
+Plugins can now include interactive panels, sidebar views, and viewers or editors for supported file types. Work with an app alongside your conversation, select the information you want ChatGPT to use, or complete a form provided by the plugin.
+Plugins still require their applicable account connections and workspace permissions.
+Learn more about
+plugins in ChatGPT and Codex
+.
 September 28, 2026
 Explore your health data with personalized summaries
 You can now select a chart, metric, or record in the
@@ -1339,7 +1688,7 @@ Voice will continue to be available on
 chatgpt.com
 , iOS, Android, and Windows app.
 No other ChatGPT features on macOS are affected.
-December 11, 2025
+GPT-5.2
 Today, we’re releasing
 GPT-5.2
 , the next upgrade to the GPT-5 series. GPT-5.2 is smarter and more useful for both work and learning—while remaining just as enjoyable to talk to. As with GPT-5.1, we’re continuing to improve our main models for everyone on a regular basis to make them more useful and enjoyable to use.
