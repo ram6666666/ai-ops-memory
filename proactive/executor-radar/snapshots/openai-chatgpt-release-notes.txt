@@ -6,7 +6,7 @@ ChatGPT
 ChatGPT release notes
 ChatGPT release notes
 Review the latest updates and release notes for ChatGPT.
-Updated: 15 hours ago
+Updated: 2 days ago
 November 20, 2026
 ChatGPT Space is rolling out to Plus
 Starting today, ChatGPT Space is rolling out globally to Plus users ages 18 and older. In Space, you can create interactive pages and presentations with ChatGPT, then invite other people with Space access to build on them with you. You can also set pages and slides to automatically update based on your connected apps and tools.

@@ -18,8 +18,8 @@
     "openai-chatgpt-release-notes": {
       "baseline_at": "2026-09-28T16:44:39+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-11-21T16:07:51+00:00",
-      "sha256": "6cc2b70a70fc49597d8451454d2fc49fcbe5a48f626c47e248f738c8cf7e9b33",
+      "last_changed_at": "2026-11-22T16:15:27+00:00",
+      "sha256": "bd8a800c1701ced9c028792008c1222fb5bd29a780f9df2eded8ff85acdb3aea",
       "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     },
     "openai-codex-changelog": {
