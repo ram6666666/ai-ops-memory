@@ -760,11 +760,11 @@ Docs
 Showcase
 All posts
 Recent
+Building security review into your SDLC with Codex Security
 How I stay in the flow with Ultrafast
 Time awareness and async input for personal agents
 Prompting GPT-Live for languages and regional accents
 Securing persistent agents like OpenClaw at OpenAI
-Pushing voice agents further: inside four GPT-Live builds
 Topics
 General
 API
@@ -16358,4 +16358,4 @@ to read and search Messages chats on your Mac and prepare or send messages. It�
 Site co-editing:
 Where Site collaboration is available, owners can
 invite active members of the same workspace as editors
-. Editors can read the Site’s live database data, update the Site, save versions, and publish changes after the owner publishes the Site for the first time. Owners retain control of the audience, settings, analytics, ownership, versio
+. Editors can read the Site’s live database data, update the Site, save versions, and publish changes after the owner publishes the Site for the first time. Owners retain control of the audience, settings, analytics, ownership, vers

@@ -18,15 +18,15 @@
     "openai-chatgpt-release-notes": {
       "baseline_at": "2026-09-28T16:44:39+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-11-22T16:15:27+00:00",
-      "sha256": "bd8a800c1701ced9c028792008c1222fb5bd29a780f9df2eded8ff85acdb3aea",
+      "last_changed_at": "2026-11-23T20:12:04+00:00",
+      "sha256": "80ee914eb21bd48dcd50ca914064dd5f817ddbf45753cc66b6855dc6bee26e12",
       "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     },
     "openai-codex-changelog": {
       "baseline_at": "2026-09-28T16:44:39+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-11-21T16:07:51+00:00",
-      "sha256": "26c65bf7cf723e3ad124aea2c6da580226e089c47ba3b89b69471179dced0d80",
+      "last_changed_at": "2026-11-23T20:12:04+00:00",
+      "sha256": "38abdaae3fa383a694c92d561b221dd7d7cf08935e7982c9596ab75b2b5f4381",
       "url": "https://help.openai.com/en/articles/11428266-codex-changelog"
     },
     "qoder-release-notes": {
