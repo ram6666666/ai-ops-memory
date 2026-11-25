@@ -4,8 +4,8 @@
     "claude-code-feed": {
       "baseline_at": "2026-09-03T01:07:07+00:00",
       "content_type": "text/plain; charset=utf-8",
-      "last_changed_at": "2026-11-24T19:29:32+00:00",
-      "sha256": "2bc46122be46670576c37007c3f25448960e1d25e1aff6c3e75681ffc5e5d96d",
+      "last_changed_at": "2026-11-25T18:38:26+00:00",
+      "sha256": "40525813a90eeda754e22eea51ad909e64bcf2ba5b5b55ece32023548dde7275",
       "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/feed.xml"
     },
     "kimi-work-release-notes": {
@@ -18,15 +18,15 @@
     "openai-chatgpt-release-notes": {
       "baseline_at": "2026-09-28T16:44:39+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-11-24T19:29:32+00:00",
-      "sha256": "e1012ddadea3212fa36af3498bdf5f60666b08f3c555202718dc2bc6b8a64022",
+      "last_changed_at": "2026-11-25T18:38:26+00:00",
+      "sha256": "a58e053692419fc090ac7e44e7a5151d44b4bc6673710f37d4d7182c5a882eac",
       "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     },
     "openai-codex-changelog": {
       "baseline_at": "2026-09-28T16:44:39+00:00",
       "content_type": "text/html; charset=utf-8",
-      "last_changed_at": "2026-11-24T19:29:32+00:00",
-      "sha256": "eee3b091fef2f6e01c4682168d07c4e46932d0778e3b358a08e34ed8c66b2dbc",
+      "last_changed_at": "2026-11-25T18:38:26+00:00",
+      "sha256": "fb5080c2bd1993470ecdd8b83a782b7e4bb05d3a14dbff71528ecd4ce9c50bbb",
       "url": "https://help.openai.com/en/articles/11428266-codex-changelog"
     },
     "qoder-release-notes": {
