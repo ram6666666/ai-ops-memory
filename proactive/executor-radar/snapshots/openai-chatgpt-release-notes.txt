@@ -5,7 +5,7 @@ ChatGPT
 ChatGPT release notes
 ChatGPT release notes
 Review the latest updates and release notes for ChatGPT.
-Updated: 2 days ago
+Updated: 3 days ago
 November 23, 2026
 GPT-6.2, now in the chat tab
 We’re rolling out a version of GPT-6.2, optimized for the chat tab, for Plus, Pro, Business and Enterprise tiers. It’s better at handling more complex requests that involve following detailed instructions or finding information online. If you’re comparing hotels for a weekend trip, it can help you weigh trade-offs like price and location and recommend the one that best fits your priorities.
