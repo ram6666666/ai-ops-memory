@@ -25,6 +25,21 @@ Qoder Release Notes
 This page lists the release history for Qoder in reverse chronological order. Haven’t downloaded yet?
 Get it now
 ​
+November 27, 2026
+Qoder 0.5.21
+Everyday Polish
+Features
+AppHub connector sync
+: You can sync locally authorized AppHub connectors that use Streamable HTTP to the cloud for use by cloud agents and automations.
+Improvements
+Network diagnostics
+: If you change proxy settings during a check, both the sign-in page and Settings now prompt you to run it again.
+Fixes
+Fixed an issue where editing a cloud automation could leave removed Skills or connectors selected, or clear existing selections before the resource list finished loading.
+Fixed an issue where differences between device clocks could cause valid registration requests, pairing approvals, or reconnection attempts to be rejected.
+Fixed an issue that prevented some local tasks from loading the model list when using the system proxy settings.
+Fixed an issue on Windows where OpenSSH host verification could fail when connecting to a workspace or reconnecting after the host address changed.
+​
 November 25, 2026
 Qoder 0.5.20
 Cross-Device Collaboration and Cloud Tasks
